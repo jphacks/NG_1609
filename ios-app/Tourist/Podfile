@@ -1,0 +1,14 @@
+platform :ios, '9.0'
+swift_version = '3.0.1'
+
+target 'Tourist' do
+  use_frameworks!
+
+  # Pods for Tourist
+
+  target 'TouristTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
