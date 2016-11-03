@@ -142,6 +142,7 @@
 				441ECD340058C4953F9AC590 /* [CP] Embed Pods Frameworks */,
 				06ACB16DE1E2937D4503E997 /* [CP] Copy Pods Resources */,
 				F80A80261DCB9C12006C1E9F /* Carthage */,
+				F80A80271DCBA051006C1E9F /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -337,6 +338,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		F80A80271DCBA051006C1E9F /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
