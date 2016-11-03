@@ -1,0 +1,11 @@
+disabled_rules:
+    - colon
+    - comma
+    - line_length
+    - force_cast
+    - force_try
+included:
+    - Tourist
+excluded:
+    - Carthage
+    - Pods
