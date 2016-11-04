@@ -1,14 +1,14 @@
 platform :ios, '9.0'
 swift_version = '3.0.1'
+use_frameworks!
 
 target 'Tourist' do
-  use_frameworks!
-
-  # Pods for Tourist
+  pod 'GoogleMaps', '2.1.0'
+  pod 'GooglePlaces', '2.1.0'
+  pod 'GooglePlacePicker', '2.1.0'
 
   target 'TouristTests' do
     inherit! :search_paths
-    # Pods for testing
   end
 
 end
