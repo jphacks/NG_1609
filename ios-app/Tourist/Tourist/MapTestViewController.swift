@@ -42,6 +42,7 @@ final class MapTestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // delegateを設定するとmarkerの詳細ポップアップが表示されない
 //        mapView.delegate = self
         view = mapView
     }
@@ -78,7 +79,6 @@ final class MapTestViewController: UIViewController {
 extension MapTestViewController: GMSMapViewDelegate {
 
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
-        marker
         return true
     }
 }
