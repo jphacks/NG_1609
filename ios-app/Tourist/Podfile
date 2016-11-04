@@ -1,14 +1,12 @@
 platform :ios, '9.0'
 swift_version = '3.0.1'
+use_frameworks!
 
 target 'Tourist' do
-  use_frameworks!
-
-  # Pods for Tourist
+  pod 'GoogleMaps'
 
   target 'TouristTests' do
     inherit! :search_paths
-    # Pods for testing
   end
 
 end
