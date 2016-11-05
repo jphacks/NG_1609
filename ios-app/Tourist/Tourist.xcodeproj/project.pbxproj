@@ -31,6 +31,16 @@
 		F8B7756F1DCDDDB7005AEE0B /* RegionList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B7756E1DCDDDB7005AEE0B /* RegionList.storyboard */; };
 		F8B775751DCDE674005AEE0B /* RegionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775731DCDE674005AEE0B /* RegionItemCell.swift */; };
 		F8B775761DCDE674005AEE0B /* RegionItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B775741DCDE674005AEE0B /* RegionItemCell.xib */; };
+		F8B775791DCE1E3A005AEE0B /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B775771DCE1E3A005AEE0B /* APIKit.framework */; };
+		F8B7757A1DCE1E3A005AEE0B /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8B775771DCE1E3A005AEE0B /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8B7757B1DCE1E3A005AEE0B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B775781DCE1E3A005AEE0B /* Result.framework */; };
+		F8B7757C1DCE1E3A005AEE0B /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8B775781DCE1E3A005AEE0B /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8B775841DCE1E4D005AEE0B /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B7757E1DCE1E4D005AEE0B /* Eureka.framework */; };
+		F8B775851DCE1E4D005AEE0B /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B7757F1DCE1E4D005AEE0B /* Himotoki.framework */; };
+		F8B775861DCE1E4D005AEE0B /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B775801DCE1E4D005AEE0B /* Kingfisher.framework */; };
+		F8B775871DCE1E4D005AEE0B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B775811DCE1E4D005AEE0B /* Realm.framework */; };
+		F8B775881DCE1E4D005AEE0B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B775821DCE1E4D005AEE0B /* RealmSwift.framework */; };
+		F8B775891DCE1E4D005AEE0B /* SwiftMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B775831DCE1E4D005AEE0B /* SwiftMessages.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +52,21 @@
 			remoteInfo = Tourist;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F8B7757D1DCE1E3A005AEE0B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F8B7757A1DCE1E3A005AEE0B /* APIKit.framework in Embed Frameworks */,
+				F8B7757C1DCE1E3A005AEE0B /* Result.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		20924FC61756E84AA2F775A6 /* Pods-TouristTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouristTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouristTests/Pods-TouristTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +102,14 @@
 		F8B7756E1DCDDDB7005AEE0B /* RegionList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegionList.storyboard; sourceTree = "<group>"; };
 		F8B775731DCDE674005AEE0B /* RegionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionItemCell.swift; sourceTree = "<group>"; };
 		F8B775741DCDE674005AEE0B /* RegionItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegionItemCell.xib; sourceTree = "<group>"; };
+		F8B775771DCE1E3A005AEE0B /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		F8B775781DCE1E3A005AEE0B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		F8B7757E1DCE1E4D005AEE0B /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
+		F8B7757F1DCE1E4D005AEE0B /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
+		F8B775801DCE1E4D005AEE0B /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		F8B775811DCE1E4D005AEE0B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		F8B775821DCE1E4D005AEE0B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		F8B775831DCE1E4D005AEE0B /* SwiftMessages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftMessages.framework; path = Carthage/Build/iOS/SwiftMessages.framework; sourceTree = "<group>"; };
 		FFE9E950029DEFEFB4B2DD82 /* Pods_Tourist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tourist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,6 +118,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B7757B1DCE1E3A005AEE0B /* Result.framework in Frameworks */,
+				F8B775791DCE1E3A005AEE0B /* APIKit.framework in Frameworks */,
+				F8B775841DCE1E4D005AEE0B /* Eureka.framework in Frameworks */,
+				F8B775851DCE1E4D005AEE0B /* Himotoki.framework in Frameworks */,
+				F8B775861DCE1E4D005AEE0B /* Kingfisher.framework in Frameworks */,
+				F8B775871DCE1E4D005AEE0B /* Realm.framework in Frameworks */,
+				F8B775881DCE1E4D005AEE0B /* RealmSwift.framework in Frameworks */,
+				F8B775891DCE1E4D005AEE0B /* SwiftMessages.framework in Frameworks */,
 				1E557977C1BFB3E952060A30 /* Pods_Tourist.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +158,14 @@
 		4C6F4882E3446DB671AAFC92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F8B7757E1DCE1E4D005AEE0B /* Eureka.framework */,
+				F8B7757F1DCE1E4D005AEE0B /* Himotoki.framework */,
+				F8B775801DCE1E4D005AEE0B /* Kingfisher.framework */,
+				F8B775811DCE1E4D005AEE0B /* Realm.framework */,
+				F8B775821DCE1E4D005AEE0B /* RealmSwift.framework */,
+				F8B775831DCE1E4D005AEE0B /* SwiftMessages.framework */,
+				F8B775771DCE1E3A005AEE0B /* APIKit.framework */,
+				F8B775781DCE1E3A005AEE0B /* Result.framework */,
 				FFE9E950029DEFEFB4B2DD82 /* Pods_Tourist.framework */,
 				5BCC53E50AAE1593EDFE085D /* Pods_TouristTests.framework */,
 				340AF39329D9F525EFB211A6 /* Pods_Tourist_TouristTests.framework */,
@@ -324,6 +373,7 @@
 				06ACB16DE1E2937D4503E997 /* [CP] Copy Pods Resources */,
 				F80A80261DCB9C12006C1E9F /* Carthage */,
 				F80A80271DCBA051006C1E9F /* SwiftLint */,
+				F8B7757D1DCE1E3A005AEE0B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -695,6 +745,10 @@
 			baseConfigurationReference = C47614B3F65B2B283C9F8E01 /* Pods-Tourist.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Tourist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -709,6 +763,10 @@
 			baseConfigurationReference = 843809C03F8D105D5EA71A18 /* Pods-Tourist.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Tourist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
