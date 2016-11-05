@@ -11,9 +11,16 @@
 		9562741B6C383DFB9433E565 /* Pods_Tourist_TouristTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340AF39329D9F525EFB211A6 /* Pods_Tourist_TouristTests.framework */; };
 		D8B4C536D831AF75EF646D24 /* Pods_TouristTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BCC53E50AAE1593EDFE085D /* Pods_TouristTests.framework */; };
 		F80A80311DCC9AD9006C1E9F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A80301DCC9AD9006C1E9F /* Constants.swift */; };
+		F80A80351DCCBE16006C1E9F /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A80341DCCBE16006C1E9F /* TopViewController.swift */; };
+		F80A80371DCCBE3E006C1E9F /* Top.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80A80361DCCBE3E006C1E9F /* Top.storyboard */; };
+		F80A803C1DCCC31B006C1E9F /* TouristSpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A803A1DCCC31B006C1E9F /* TouristSpotCell.swift */; };
+		F80A803D1DCCC31B006C1E9F /* TouristSpotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80A803B1DCCC31B006C1E9F /* TouristSpotCell.xib */; };
+		F80A803F1DCCC906006C1E9F /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A803E1DCCC906006C1E9F /* ReusableCell.swift */; };
+		F80A80431DCCF1F4006C1E9F /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A80421DCCF1F4006C1E9F /* NSObject+.swift */; };
+		F80A80451DCCF222006C1E9F /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A80441DCCF222006C1E9F /* UITableView+.swift */; };
 		F8A967951DCAC64A00EEA342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A967941DCAC64A00EEA342 /* AppDelegate.swift */; };
 		F8A967971DCAC64A00EEA342 /* MapTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A967961DCAC64A00EEA342 /* MapTestViewController.swift */; };
-		F8A9679A1DCAC64A00EEA342 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A967981DCAC64A00EEA342 /* Main.storyboard */; };
+		F8A9679A1DCAC64A00EEA342 /* MapTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A967981DCAC64A00EEA342 /* MapTest.storyboard */; };
 		F8A9679C1DCAC64A00EEA342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A9679B1DCAC64A00EEA342 /* Assets.xcassets */; };
 		F8A9679F1DCAC64A00EEA342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A9679D1DCAC64A00EEA342 /* LaunchScreen.storyboard */; };
 		F8A967AA1DCAC64A00EEA342 /* TouristTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A967A91DCAC64A00EEA342 /* TouristTests.swift */; };
@@ -39,10 +46,17 @@
 		C47614B3F65B2B283C9F8E01 /* Pods-Tourist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tourist/Pods-Tourist.debug.xcconfig"; sourceTree = "<group>"; };
 		C4A7524296331652C2A40553 /* Pods-Tourist-TouristTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourist-TouristTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tourist-TouristTests/Pods-Tourist-TouristTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F80A80301DCC9AD9006C1E9F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F80A80341DCCBE16006C1E9F /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		F80A80361DCCBE3E006C1E9F /* Top.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Top.storyboard; sourceTree = "<group>"; };
+		F80A803A1DCCC31B006C1E9F /* TouristSpotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouristSpotCell.swift; sourceTree = "<group>"; };
+		F80A803B1DCCC31B006C1E9F /* TouristSpotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouristSpotCell.xib; sourceTree = "<group>"; };
+		F80A803E1DCCC906006C1E9F /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		F80A80421DCCF1F4006C1E9F /* NSObject+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		F80A80441DCCF222006C1E9F /* UITableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		F8A967911DCAC64A00EEA342 /* Tourist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tourist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A967941DCAC64A00EEA342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8A967961DCAC64A00EEA342 /* MapTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTestViewController.swift; sourceTree = "<group>"; };
-		F8A967991DCAC64A00EEA342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8A967991DCAC64A00EEA342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MapTest.storyboard; sourceTree = "<group>"; };
 		F8A9679B1DCAC64A00EEA342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8A9679E1DCAC64A00EEA342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8A967A01DCAC64A00EEA342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,7 +113,8 @@
 		F80A80281DCC8BBE006C1E9F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F8A967961DCAC64A00EEA342 /* MapTestViewController.swift */,
+				F80A80331DCCBDCF006C1E9F /* Top */,
+				F80A80321DCCBDAB006C1E9F /* MapTest */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -121,6 +136,8 @@
 		F80A802B1DCC8EA7006C1E9F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F80A80391DCCC224006C1E9F /* CollectionCell */,
+				F80A80381DCCC217006C1E9F /* TableCell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -128,6 +145,9 @@
 		F80A802C1DCC8EB5006C1E9F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F80A803E1DCCC906006C1E9F /* ReusableCell.swift */,
+				F80A80441DCCF222006C1E9F /* UITableView+.swift */,
+				F80A80421DCCF1F4006C1E9F /* NSObject+.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -148,6 +168,40 @@
 			children = (
 			);
 			name = Manager;
+			sourceTree = "<group>";
+		};
+		F80A80321DCCBDAB006C1E9F /* MapTest */ = {
+			isa = PBXGroup;
+			children = (
+				F8A967981DCAC64A00EEA342 /* MapTest.storyboard */,
+				F8A967961DCAC64A00EEA342 /* MapTestViewController.swift */,
+			);
+			name = MapTest;
+			sourceTree = "<group>";
+		};
+		F80A80331DCCBDCF006C1E9F /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				F80A80361DCCBE3E006C1E9F /* Top.storyboard */,
+				F80A80341DCCBE16006C1E9F /* TopViewController.swift */,
+			);
+			name = Top;
+			sourceTree = "<group>";
+		};
+		F80A80381DCCC217006C1E9F /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TableCell;
+			sourceTree = "<group>";
+		};
+		F80A80391DCCC224006C1E9F /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				F80A803A1DCCC31B006C1E9F /* TouristSpotCell.swift */,
+				F80A803B1DCCC31B006C1E9F /* TouristSpotCell.xib */,
+			);
+			name = CollectionCell;
 			sourceTree = "<group>";
 		};
 		F8A967881DCAC64A00EEA342 = {
@@ -174,7 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				F8A967941DCAC64A00EEA342 /* AppDelegate.swift */,
-				F8A967981DCAC64A00EEA342 /* Main.storyboard */,
 				F80A802B1DCC8EA7006C1E9F /* View */,
 				F80A80281DCC8BBE006C1E9F /* ViewController */,
 				F80A802D1DCC8F18006C1E9F /* Model */,
@@ -287,8 +340,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8A9679F1DCAC64A00EEA342 /* LaunchScreen.storyboard in Resources */,
+				F80A80371DCCBE3E006C1E9F /* Top.storyboard in Resources */,
 				F8A9679C1DCAC64A00EEA342 /* Assets.xcassets in Resources */,
-				F8A9679A1DCAC64A00EEA342 /* Main.storyboard in Resources */,
+				F80A803D1DCCC31B006C1E9F /* TouristSpotCell.xib in Resources */,
+				F8A9679A1DCAC64A00EEA342 /* MapTest.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +483,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8A967971DCAC64A00EEA342 /* MapTestViewController.swift in Sources */,
+				F80A80451DCCF222006C1E9F /* UITableView+.swift in Sources */,
+				F80A80351DCCBE16006C1E9F /* TopViewController.swift in Sources */,
+				F80A803F1DCCC906006C1E9F /* ReusableCell.swift in Sources */,
+				F80A803C1DCCC31B006C1E9F /* TouristSpotCell.swift in Sources */,
+				F80A80431DCCF1F4006C1E9F /* NSObject+.swift in Sources */,
 				F8A967951DCAC64A00EEA342 /* AppDelegate.swift in Sources */,
 				F80A80311DCC9AD9006C1E9F /* Constants.swift in Sources */,
 			);
@@ -452,12 +512,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F8A967981DCAC64A00EEA342 /* Main.storyboard */ = {
+		F8A967981DCAC64A00EEA342 /* MapTest.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F8A967991DCAC64A00EEA342 /* Base */,
 			);
-			name = Main.storyboard;
+			name = MapTest.storyboard;
 			sourceTree = "<group>";
 		};
 		F8A9679D1DCAC64A00EEA342 /* LaunchScreen.storyboard */ = {

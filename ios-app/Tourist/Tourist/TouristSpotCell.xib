@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TouristSpotCell" id="gTV-IL-0wX" customClass="TouristSpotCell" customModule="Tourist" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z6Q-sx-K3I">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Z6Q-sx-K3I" secondAttribute="height" multiplier="1:1" id="oFa-pF-jl9"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzL-2h-6EZ">
+                        <rect key="frame" x="0.0" y="250" width="250" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikq-Tf-kfr">
+                                <rect key="frame" x="8" y="3" width="234" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqK-v7-XDi">
+                                <rect key="frame" x="8" y="29" width="113" height="15"/>
+                                <color key="backgroundColor" red="1" green="0.92150796980000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="nQu-h4-pza"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Love"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9l-TV-dYO">
+                                <rect key="frame" x="129" y="29" width="113" height="15"/>
+                                <color key="backgroundColor" red="1" green="0.92150796980000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="sWT-M2-X6q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Star"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93665865384615388" green="0.93665865384615388" blue="0.93665865384615388" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="x9l-TV-dYO" secondAttribute="trailing" constant="8" id="9yv-vF-ucn"/>
+                            <constraint firstAttribute="height" constant="50" id="Dob-ZT-RnZ"/>
+                            <constraint firstItem="Ikq-Tf-kfr" firstAttribute="top" secondItem="pzL-2h-6EZ" secondAttribute="top" constant="3" id="Mqh-jQ-qp9"/>
+                            <constraint firstItem="x9l-TV-dYO" firstAttribute="width" secondItem="DqK-v7-XDi" secondAttribute="width" id="Spm-qm-N4E"/>
+                            <constraint firstAttribute="bottom" secondItem="x9l-TV-dYO" secondAttribute="bottom" constant="6" id="THT-4l-Roz"/>
+                            <constraint firstItem="x9l-TV-dYO" firstAttribute="leading" secondItem="DqK-v7-XDi" secondAttribute="trailing" constant="8" id="UXm-yC-z7f"/>
+                            <constraint firstItem="Ikq-Tf-kfr" firstAttribute="leading" secondItem="pzL-2h-6EZ" secondAttribute="leading" constant="8" id="jXd-XX-aee"/>
+                            <constraint firstAttribute="bottom" secondItem="DqK-v7-XDi" secondAttribute="bottom" constant="6" id="l6b-Xd-IpI"/>
+                            <constraint firstItem="DqK-v7-XDi" firstAttribute="leading" secondItem="pzL-2h-6EZ" secondAttribute="leading" constant="8" id="qua-FO-JLT"/>
+                            <constraint firstAttribute="trailing" secondItem="Ikq-Tf-kfr" secondAttribute="trailing" constant="8" id="wiU-zP-Rav"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Z6Q-sx-K3I" secondAttribute="trailing" id="9ao-CH-zTX"/>
+                <constraint firstItem="pzL-2h-6EZ" firstAttribute="top" secondItem="Z6Q-sx-K3I" secondAttribute="bottom" id="E5y-fT-aPP"/>
+                <constraint firstAttribute="bottom" secondItem="pzL-2h-6EZ" secondAttribute="bottom" id="Yhe-r6-kqo"/>
+                <constraint firstItem="Z6Q-sx-K3I" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="e2l-ou-Tsn"/>
+                <constraint firstAttribute="trailing" secondItem="pzL-2h-6EZ" secondAttribute="trailing" id="hgx-Rh-WK6"/>
+                <constraint firstItem="pzL-2h-6EZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rDj-sW-vzS"/>
+                <constraint firstItem="Z6Q-sx-K3I" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yhh-8D-kEQ"/>
+            </constraints>
+            <size key="customSize" width="257" height="320"/>
+            <connections>
+                <outlet property="imageView" destination="Z6Q-sx-K3I" id="xpD-bd-Wzb"/>
+                <outlet property="loveButton" destination="DqK-v7-XDi" id="XXb-5x-Qeq"/>
+                <outlet property="nameLabel" destination="Ikq-Tf-kfr" id="FFG-bI-nZv"/>
+                <outlet property="starButton" destination="x9l-TV-dYO" id="0PF-xw-QKN"/>
+            </connections>
+            <point key="canvasLocation" x="137" y="189"/>
+        </collectionViewCell>
+    </objects>
+</document>
