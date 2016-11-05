@@ -8,12 +8,15 @@
 [![SwiftLint](https://img.shields.io/badge/SwiftLint-0.11.1-orange.svg)](https://github.com/realm/SwiftLint)
 [![Carthage](https://img.shields.io/badge/Carthage-0.18.1-orange.svg)](https://github.com/Carthage/Carthage)
 
-## [Server](https://github.com/jphacks/NG_1609_2) (https://github.com/jphacks/NG_1609_2)
-[![Ruby](https://img.shields.io/badge/Ruby-2.3.1-orange.svg)]
-[![Swift](https://img.shields.io/badge/Rails-5.0.0.1-orange.svg)]
+## Server : https://github.com/jphacks/NG_1609_2 
+![Ruby](https://img.shields.io/badge/Ruby-2.3.1-orange.svg)
+![Rails](https://img.shields.io/badge/Rails-5.0.0.1-orange.svg)
 
 ## 製品概要
-### Tour X Tech
+### TourTech　(Tourism X Technology)
+**旅行をもっと楽しく、面白く、効率的に** 
+東京オリンピックが２０２０年に開催され、日本での「　**観光**　」に注目が集まっています。
+より良い日本での観光を提供したいと考え、「　**観光**　」 を 「　**テクノロジー**　」　を使って改善してみました！
 
 ### 背景（製品開発のきっかけ、課題等）
 * 外国人観光客の増加
