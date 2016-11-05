@@ -18,13 +18,6 @@ final class TouristSpotCell: UICollectionViewCell, NibReusableCell {
     private static let descriptionViewHeight = CGFloat(50.0)
     static let identifier = "TouristSpotCell"
 
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
