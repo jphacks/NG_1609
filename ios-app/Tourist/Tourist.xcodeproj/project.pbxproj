@@ -27,6 +27,10 @@
 		F8A9679C1DCAC64A00EEA342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A9679B1DCAC64A00EEA342 /* Assets.xcassets */; };
 		F8A9679F1DCAC64A00EEA342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A9679D1DCAC64A00EEA342 /* LaunchScreen.storyboard */; };
 		F8A967AA1DCAC64A00EEA342 /* TouristTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A967A91DCAC64A00EEA342 /* TouristTests.swift */; };
+		F8B7756D1DCDDDAE005AEE0B /* RegionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7756C1DCDDDAE005AEE0B /* RegionListViewController.swift */; };
+		F8B7756F1DCDDDB7005AEE0B /* RegionList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B7756E1DCDDDB7005AEE0B /* RegionList.storyboard */; };
+		F8B775751DCDE674005AEE0B /* RegionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775731DCDE674005AEE0B /* RegionItemCell.swift */; };
+		F8B775761DCDE674005AEE0B /* RegionItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B775741DCDE674005AEE0B /* RegionItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		F8A967A51DCAC64A00EEA342 /* TouristTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouristTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A967A91DCAC64A00EEA342 /* TouristTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristTests.swift; sourceTree = "<group>"; };
 		F8A967AB1DCAC64A00EEA342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8B7756C1DCDDDAE005AEE0B /* RegionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionListViewController.swift; sourceTree = "<group>"; };
+		F8B7756E1DCDDDB7005AEE0B /* RegionList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegionList.storyboard; sourceTree = "<group>"; };
+		F8B775731DCDE674005AEE0B /* RegionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionItemCell.swift; sourceTree = "<group>"; };
+		F8B775741DCDE674005AEE0B /* RegionItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegionItemCell.xib; sourceTree = "<group>"; };
 		FFE9E950029DEFEFB4B2DD82 /* Pods_Tourist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tourist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +127,7 @@
 		F80A80281DCC8BBE006C1E9F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F8B7756B1DCDDD97005AEE0B /* RegionList */,
 				F80A80461DCD65B9006C1E9F /* TourPlanList */,
 				F80A80331DCCBDCF006C1E9F /* Top */,
 				F80A80321DCCBDAB006C1E9F /* MapTest */,
@@ -206,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				F80A804C1DCD6735006C1E9F /* TouristSpot */,
+				F8B775701DCDE518005AEE0B /* RegionItemCell */,
 			);
 			name = CollectionCell;
 			sourceTree = "<group>";
@@ -279,6 +289,24 @@
 				F8A967AB1DCAC64A00EEA342 /* Info.plist */,
 			);
 			path = TouristTests;
+			sourceTree = "<group>";
+		};
+		F8B7756B1DCDDD97005AEE0B /* RegionList */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7756C1DCDDDAE005AEE0B /* RegionListViewController.swift */,
+				F8B7756E1DCDDDB7005AEE0B /* RegionList.storyboard */,
+			);
+			name = RegionList;
+			sourceTree = "<group>";
+		};
+		F8B775701DCDE518005AEE0B /* RegionItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				F8B775731DCDE674005AEE0B /* RegionItemCell.swift */,
+				F8B775741DCDE674005AEE0B /* RegionItemCell.xib */,
+			);
+			name = RegionItemCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,8 +404,10 @@
 				F80A80501DCD6778006C1E9F /* TourPlanCell.xib in Resources */,
 				F80A80371DCCBE3E006C1E9F /* Top.storyboard in Resources */,
 				F8A9679C1DCAC64A00EEA342 /* Assets.xcassets in Resources */,
+				F8B7756F1DCDDDB7005AEE0B /* RegionList.storyboard in Resources */,
 				F80A803D1DCCC31B006C1E9F /* TouristSpotCell.xib in Resources */,
 				F8A9679A1DCAC64A00EEA342 /* MapTest.storyboard in Resources */,
+				F8B775761DCDE674005AEE0B /* RegionItemCell.xib in Resources */,
 				F80A804A1DCD6604006C1E9F /* TourPlanList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,11 +549,13 @@
 			files = (
 				F80A80481DCD65D6006C1E9F /* TourPlanListViewController.swift in Sources */,
 				F8A967971DCAC64A00EEA342 /* MapTestViewController.swift in Sources */,
+				F8B7756D1DCDDDAE005AEE0B /* RegionListViewController.swift in Sources */,
 				F80A80351DCCBE16006C1E9F /* TopViewController.swift in Sources */,
 				F80A804F1DCD6778006C1E9F /* TourPlanCell.swift in Sources */,
 				F80A803F1DCCC906006C1E9F /* ReusableCell.swift in Sources */,
 				F80A803C1DCCC31B006C1E9F /* TouristSpotCell.swift in Sources */,
 				F80A80431DCCF1F4006C1E9F /* NSObject+.swift in Sources */,
+				F8B775751DCDE674005AEE0B /* RegionItemCell.swift in Sources */,
 				F8A967951DCAC64A00EEA342 /* AppDelegate.swift in Sources */,
 				F80A80311DCC9AD9006C1E9F /* Constants.swift in Sources */,
 			);
