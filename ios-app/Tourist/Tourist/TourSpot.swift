@@ -14,6 +14,7 @@ import Himotoki
 final class TourSpot: Object {
 
     dynamic var spotId              : Int    = 0
+    dynamic var regionId            : Int    = 0
     dynamic var name                : String = ""
     dynamic var detailDescription   : String = ""
     dynamic var imageUrl            : String = ""

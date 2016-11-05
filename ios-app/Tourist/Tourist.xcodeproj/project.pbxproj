@@ -45,6 +45,7 @@
 		F8B7758E1DCE2240005AEE0B /* RegionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7758C1DCE2240005AEE0B /* RegionListViewController.swift */; };
 		F8B775921DCE2261005AEE0B /* RegionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775901DCE2261005AEE0B /* RegionItemCell.swift */; };
 		F8B775931DCE2261005AEE0B /* RegionItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B775911DCE2261005AEE0B /* RegionItemCell.xib */; };
+		F8B775951DCE2377005AEE0B /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775941DCE2377005AEE0B /* Region.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		F8B7758C1DCE2240005AEE0B /* RegionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionListViewController.swift; sourceTree = "<group>"; };
 		F8B775901DCE2261005AEE0B /* RegionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionItemCell.swift; sourceTree = "<group>"; };
 		F8B775911DCE2261005AEE0B /* RegionItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegionItemCell.xib; sourceTree = "<group>"; };
+		F8B775941DCE2377005AEE0B /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		FFE9E950029DEFEFB4B2DD82 /* Pods_Tourist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tourist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -356,6 +358,7 @@
 				F8B775641DCDC371005AEE0B /* TourSpot.swift */,
 				F8B775621DCDC24C005AEE0B /* TourPlan.swift */,
 				F8B7754D1DCDC0BB005AEE0B /* TourPlanItem.swift */,
+				F8B775941DCE2377005AEE0B /* Region.swift */,
 			);
 			name = Realm;
 			sourceTree = "<group>";
@@ -628,6 +631,7 @@
 				F80A803F1DCCC906006C1E9F /* ReusableCell.swift in Sources */,
 				F8B775671DCDC9F2005AEE0B /* Weather.swift in Sources */,
 				F80A803C1DCCC31B006C1E9F /* TouristSpotCell.swift in Sources */,
+				F8B775951DCE2377005AEE0B /* Region.swift in Sources */,
 				F80A80431DCCF1F4006C1E9F /* NSObject+.swift in Sources */,
 				F8A967951DCAC64A00EEA342 /* AppDelegate.swift in Sources */,
 				F80A80311DCC9AD9006C1E9F /* Constants.swift in Sources */,
