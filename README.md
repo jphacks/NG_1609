@@ -1,11 +1,16 @@
 # Tourhythm
+## Client
 [![Xcode](https://img.shields.io/badge/Xcode-8.0.1-orange.svg)](https://developer.apple.com/xcode/)
 [![Swift](https://img.shields.io/badge/Swift-3.0.1-orange.svg)](https://swift.org/)
 [![Support](https://img.shields.io/badge/support-iOS%209%2B%20-orange.svg?style=flat)](https://www.apple.com/nl/ios/)
 [![Homebrew](https://img.shields.io/badge/Homebrew-1.0.5-orange.svg)](http://brew.sh/index_ja.html)
-[![CocoaPods](https://img.shields.io/badge/CocoaPdos-1.1.1-orange.svg)](https://cocoapods.org)
+[![CocoaPods](https://img.shields.io/badge/CocoaPods-1.1.1-orange.svg)](https://cocoapods.org)
 [![SwiftLint](https://img.shields.io/badge/SwiftLint-0.11.1-orange.svg)](https://github.com/realm/SwiftLint)
-[![Carthage](https://img.shields.io/badge/Carthage-0.18.1-orange.svg)](https://github.com/realm/SwiftLint)
+[![Carthage](https://img.shields.io/badge/Carthage-0.18.1-orange.svg)](https://github.com/Carthage/Carthage)
+
+## [Server](https://github.com/jphacks/NG_1609_2) (https://github.com/jphacks/NG_1609_2)
+[![Ruby](https://img.shields.io/badge/Ruby-2.3.1-orange.svg)]
+[![Swift](https://img.shields.io/badge/Rails-5.0.0.1-orange.svg)]
 
 ## 製品概要
 ### Tour X Tech
