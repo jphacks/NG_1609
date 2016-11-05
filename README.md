@@ -13,7 +13,7 @@
 ![Rails](https://img.shields.io/badge/Rails-5.0.0.1-orange.svg)
 
 ## Resourses :  https://github.com/jphacks/NG_1609_3 
-![XD]((https://img.shields.io/badge/XD-0.6.2.7-orange.svg))
+![XD](https://img.shields.io/badge/XD-0.6.2.7-orange.svg)
 
 ## 製品概要
 ### TourTech　(Tourism X Technology)
