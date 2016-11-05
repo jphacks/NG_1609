@@ -46,6 +46,8 @@
 		F8B775921DCE2261005AEE0B /* RegionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775901DCE2261005AEE0B /* RegionItemCell.swift */; };
 		F8B775931DCE2261005AEE0B /* RegionItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B775911DCE2261005AEE0B /* RegionItemCell.xib */; };
 		F8B775951DCE2377005AEE0B /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775941DCE2377005AEE0B /* Region.swift */; };
+		F8B775981DCE2741005AEE0B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775971DCE2741005AEE0B /* Location.swift */; };
+		F8B7759B1DCE2F49005AEE0B /* Regions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7759A1DCE2F49005AEE0B /* Regions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +122,8 @@
 		F8B775901DCE2261005AEE0B /* RegionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionItemCell.swift; sourceTree = "<group>"; };
 		F8B775911DCE2261005AEE0B /* RegionItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegionItemCell.xib; sourceTree = "<group>"; };
 		F8B775941DCE2377005AEE0B /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		F8B775971DCE2741005AEE0B /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F8B7759A1DCE2F49005AEE0B /* Regions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regions.swift; sourceTree = "<group>"; };
 		FFE9E950029DEFEFB4B2DD82 /* Pods_Tourist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tourist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -197,6 +201,7 @@
 		F80A80291DCC8BCC006C1E9F /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				F8B775991DCE2F37005AEE0B /* Response */,
 				F8B775681DCDD002005AEE0B /* Realm */,
 				F80A80301DCC9AD9006C1E9F /* Constants.swift */,
 				F8B775661DCDC9F2005AEE0B /* Weather.swift */,
@@ -207,6 +212,7 @@
 		F80A802A1DCC8BE8006C1E9F /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				F8B775961DCE2726005AEE0B /* Request */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -379,6 +385,22 @@
 				F8B775911DCE2261005AEE0B /* RegionItemCell.xib */,
 			);
 			name = RegionItem;
+			sourceTree = "<group>";
+		};
+		F8B775961DCE2726005AEE0B /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				F8B775971DCE2741005AEE0B /* Location.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		F8B775991DCE2F37005AEE0B /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7759A1DCE2F49005AEE0B /* Regions.swift */,
+			);
+			name = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -633,6 +655,7 @@
 				F8B775651DCDC371005AEE0B /* TourSpot.swift in Sources */,
 				F8B775631DCDC24C005AEE0B /* TourPlan.swift in Sources */,
 				F8A967971DCAC64A00EEA342 /* MapTestViewController.swift in Sources */,
+				F8B775981DCE2741005AEE0B /* Location.swift in Sources */,
 				F80A80351DCCBE16006C1E9F /* TopViewController.swift in Sources */,
 				F8B7754E1DCDC0BB005AEE0B /* TourPlanItem.swift in Sources */,
 				F80A804F1DCD6778006C1E9F /* TourPlanCell.swift in Sources */,
@@ -640,6 +663,7 @@
 				F8B775671DCDC9F2005AEE0B /* Weather.swift in Sources */,
 				F80A803C1DCCC31B006C1E9F /* TouristSpotCell.swift in Sources */,
 				F8B775951DCE2377005AEE0B /* Region.swift in Sources */,
+				F8B7759B1DCE2F49005AEE0B /* Regions.swift in Sources */,
 				F80A80431DCCF1F4006C1E9F /* NSObject+.swift in Sources */,
 				F8A967951DCAC64A00EEA342 /* AppDelegate.swift in Sources */,
 				F80A80311DCC9AD9006C1E9F /* Constants.swift in Sources */,
