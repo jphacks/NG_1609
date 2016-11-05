@@ -6,3 +6,4 @@ github "xmartlabs/Eureka" ~> 2.0.0
 github "SwiftKickMobile/SwiftMessages"
 
 github "antitypical/Result" ~> 3.0
+github "WenchaoD/FSCalendar"

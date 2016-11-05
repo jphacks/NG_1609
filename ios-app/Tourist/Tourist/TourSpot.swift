@@ -9,8 +9,6 @@
 import Foundation
 import RealmSwift
 import Himotoki
-
-
 final class TourSpot: Object {
 
     dynamic var spotId              : Int    = 0
