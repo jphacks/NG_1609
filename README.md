@@ -1,10 +1,12 @@
 # Tourhythm
-[![Xcode](https://img.shields.io/badge/Xcode-8.0-orange.svg)](https://developer.apple.com/xcode/)
-[![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)](https://swift.org/)
-[![Support](https://img.shields.io/badge/support-iOS%208%2B%20-orange.svg?style=flat)](https://www.apple.com/nl/ios/)
+[![Xcode](https://img.shields.io/badge/Xcode-8.0.1-orange.svg)](https://developer.apple.com/xcode/)
+[![Swift](https://img.shields.io/badge/Swift-3.0.1-orange.svg)](https://swift.org/)
+[![Support](https://img.shields.io/badge/support-iOS%209%2B%20-orange.svg?style=flat)](https://www.apple.com/nl/ios/)
 [![Homebrew](https://img.shields.io/badge/Homebrew-1.0.5-orange.svg)](http://brew.sh/index_ja.html)
 [![CocoaPods](https://img.shields.io/badge/CocoaPdos-1.1.1-orange.svg)](https://cocoapods.org)
 [![SwiftLint](https://img.shields.io/badge/SwiftLint-0.11.1-orange.svg)](https://github.com/realm/SwiftLint)
+[![Carthage](https://img.shields.io/badge/Carthage-0.18.1-orange.svg)](https://github.com/realm/SwiftLint)
+
 ## 製品概要
 ### Tour X Tech
 
@@ -39,9 +41,10 @@
 * 行き先評価エンジンの開発
 
 ## 開発技術
-* Xcode　8.
-* Swift 
-* Rails
+* Xcode　8.0.1
+* Swift　３.0.1
+* Rails ５．０．０．１
+* Ruby　2.3.1
 
 ### 活用した外部技術
 #### API・データ
