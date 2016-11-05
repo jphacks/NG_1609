@@ -1,0 +1,8 @@
+github "ishkawa/APIKit" ~> 3.0
+github "ikesyo/Himotoki" ~> 3.0
+github "onevcat/Kingfisher" ~> 3.0
+github "realm/realm-cocoa"
+github "xmartlabs/Eureka" ~> 2.0.0
+github "SwiftKickMobile/SwiftMessages"
+
+github "antitypical/Result" ~> 3.0

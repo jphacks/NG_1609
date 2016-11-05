@@ -1,0 +1,7 @@
+github "xmartlabs/Eureka" "2.0.0-beta.1"
+github "ikesyo/Himotoki" "3.0.0"
+github "onevcat/Kingfisher" "3.1.4"
+github "antitypical/Result" "3.0.0"
+github "SwiftKickMobile/SwiftMessages" "3.0.3"
+github "realm/realm-cocoa" "v2.0.3"
+github "ishkawa/APIKit" "3.0.0"
