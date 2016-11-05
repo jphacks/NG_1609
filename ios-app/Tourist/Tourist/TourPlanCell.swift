@@ -10,18 +10,6 @@ import UIKit
 
 final class TourPlanCell: UITableViewCell, NibReusableCell {
 
-    enum Weather {
-        case sun, cloud, rain
-
-        var image: UIImage {
-            switch self {
-            case .sun:   return #imageLiteral(resourceName: "sun")
-            case .cloud: return #imageLiteral(resourceName: "cloud")
-            case .rain:  return #imageLiteral(resourceName: "rain")
-            }
-        }
-    }
-
     enum LineType {
         case top, center, last
     }

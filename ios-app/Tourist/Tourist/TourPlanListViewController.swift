@@ -25,7 +25,7 @@ final class TourPlanListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withClass: TourPlanCell.self, indexPath: indexPath)
         switch indexPath.row {
         case 0:  cell.setLine(type: .top)
-        case 9: cell.setLine(type: .last)
+        case 9:  cell.setLine(type: .last)
         default: cell.setLine(type: .center)
         }
         cell.setWeather(startWhether: .sun, endWeather: .cloud, degree: 14)
