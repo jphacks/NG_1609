@@ -14,6 +14,7 @@ final class TourPlanItem: Object {
 
     dynamic var itemId          : String = ""
     dynamic var createdAt       : Date   = Date()
+    dynamic var updatedAt       : Date   = Date()
     dynamic var title           : String = ""
     dynamic var startTime       : String = ""
     dynamic var endTime         : String = ""

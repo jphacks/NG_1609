@@ -7,16 +7,18 @@
 //
 
 import UIKit
+import Kingfisher
 
-class RegionItemCell: UICollectionViewCell, NibReusableCell {
+
+final class RegionItemCell: UICollectionViewCell, NibReusableCell {
 
     @IBOutlet private weak var backgroundImageView: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!
 
 
-    func setupCell(name: String, image: UIImage) {
+    func setupCell(name: String, imageUrl: String) {
         nameLabel.text = name
-        backgroundImageView.image = image
+        backgroundImageView.kf.setImage(with: URL(string: imageUrl))
     }
 
 }

@@ -21,16 +21,22 @@ final class TourSpot: Object {
     dynamic var kind                : String = ""
     dynamic var requiredTime        : Double = 0.0
     dynamic var requiredTimeSeconds : Int    = 0
-    dynamic var latitude            : Double = 0.0
-    dynamic var longtitude          : Double = 0.0
+    dynamic var latitude            : String = ""
+    dynamic var longtitude          : String = ""
 
 
-    convenience init(spotId: Int, regionId: Int, name: String, latitude: Double, longtitude: Double, description: String, imageUrl: String, kind: String, requiredTime: Double) {
+    convenience init(spotId: Int, regionId: Int, name: String, latitude: String, longtitude: String, description: String, imageUrl: String, kind: String, requiredTime: Double) {
         self.init()
 
         self.spotId = spotId
+        self.regionId = regionId
+        self.name = name
         self.latitude = latitude
         self.longtitude = longtitude
+        self.detailDescription = description
+        self.imageUrl = imageUrl
+        self.kind = kind
+        self.requiredTime = requiredTime
     }
 
     override static func primaryKey() -> String? {
