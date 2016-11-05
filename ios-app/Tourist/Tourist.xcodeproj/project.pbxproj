@@ -46,6 +46,20 @@
 		F8B775921DCE2261005AEE0B /* RegionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775901DCE2261005AEE0B /* RegionItemCell.swift */; };
 		F8B775931DCE2261005AEE0B /* RegionItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B775911DCE2261005AEE0B /* RegionItemCell.xib */; };
 		F8B775951DCE2377005AEE0B /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775941DCE2377005AEE0B /* Region.swift */; };
+		FA8FE8B41DCE4B93006B6ED5 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8FE8B31DCE4B93006B6ED5 /* FSCalendar.framework */; };
+		FA8FE8C21DCE5B88006B6ED5 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8FE8B71DCE5B88006B6ED5 /* back.png */; };
+		FA8FE8C31DCE5B88006B6ED5 /* bad.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8FE8B81DCE5B88006B6ED5 /* bad.png */; };
+		FA8FE8C41DCE5B88006B6ED5 /* decide.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8FE8B91DCE5B88006B6ED5 /* decide.png */; };
+		FA8FE8C51DCE5B88006B6ED5 /* exportIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8FE8BA1DCE5B88006B6ED5 /* exportIcon.png */; };
+		FA8FE8C61DCE5B88006B6ED5 /* good.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8FE8BB1DCE5B88006B6ED5 /* good.png */; };
+		FA8FE8C71DCE5B88006B6ED5 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8FE8BC1DCE5B88006B6ED5 /* heart.png */; };
+		FA8FE8C81DCE5B88006B6ED5 /* heartPink.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8FE8BD1DCE5B88006B6ED5 /* heartPink.png */; };
+		FA8FE8C91DCE5B88006B6ED5 /* makeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8FE8BE1DCE5B88006B6ED5 /* makeButton.png */; };
+		FA8FE8CA1DCE5B88006B6ED5 /* mapIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8FE8BF1DCE5B88006B6ED5 /* mapIcon.png */; };
+		FA8FE8CB1DCE5B88006B6ED5 /* plusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8FE8C01DCE5B88006B6ED5 /* plusIcon.png */; };
+		FA8FE8CC1DCE5B88006B6ED5 /* searchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8FE8C11DCE5B88006B6ED5 /* searchIcon.png */; };
+		FAB7324F1DCE382500CC2794 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB7324E1DCE382500CC2794 /* CalendarViewController.swift */; };
+		FAB732511DCE383F00CC2794 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB732501DCE383F00CC2794 /* Calendar.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +134,20 @@
 		F8B775901DCE2261005AEE0B /* RegionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionItemCell.swift; sourceTree = "<group>"; };
 		F8B775911DCE2261005AEE0B /* RegionItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegionItemCell.xib; sourceTree = "<group>"; };
 		F8B775941DCE2377005AEE0B /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		FA8FE8B31DCE4B93006B6ED5 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = "<group>"; };
+		FA8FE8B71DCE5B88006B6ED5 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		FA8FE8B81DCE5B88006B6ED5 /* bad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bad.png; sourceTree = "<group>"; };
+		FA8FE8B91DCE5B88006B6ED5 /* decide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = decide.png; sourceTree = "<group>"; };
+		FA8FE8BA1DCE5B88006B6ED5 /* exportIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exportIcon.png; sourceTree = "<group>"; };
+		FA8FE8BB1DCE5B88006B6ED5 /* good.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = good.png; sourceTree = "<group>"; };
+		FA8FE8BC1DCE5B88006B6ED5 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		FA8FE8BD1DCE5B88006B6ED5 /* heartPink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heartPink.png; sourceTree = "<group>"; };
+		FA8FE8BE1DCE5B88006B6ED5 /* makeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = makeButton.png; sourceTree = "<group>"; };
+		FA8FE8BF1DCE5B88006B6ED5 /* mapIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapIcon.png; sourceTree = "<group>"; };
+		FA8FE8C01DCE5B88006B6ED5 /* plusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plusIcon.png; sourceTree = "<group>"; };
+		FA8FE8C11DCE5B88006B6ED5 /* searchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchIcon.png; sourceTree = "<group>"; };
+		FAB7324E1DCE382500CC2794 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		FAB732501DCE383F00CC2794 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		FFE9E950029DEFEFB4B2DD82 /* Pods_Tourist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tourist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -128,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8FE8B41DCE4B93006B6ED5 /* FSCalendar.framework in Frameworks */,
 				1E557977C1BFB3E952060A30 /* Pods_Tourist.framework in Frameworks */,
 				F8B775551DCDC10D005AEE0B /* Eureka.framework in Frameworks */,
 				F8B775591DCDC10D005AEE0B /* RealmSwift.framework in Frameworks */,
@@ -168,6 +197,7 @@
 		4C6F4882E3446DB671AAFC92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA8FE8B31DCE4B93006B6ED5 /* FSCalendar.framework */,
 				F8B7755B1DCDC122005AEE0B /* APIKit.framework */,
 				F8B7755C1DCDC122005AEE0B /* Result.framework */,
 				F8B7754F1DCDC10D005AEE0B /* Eureka.framework */,
@@ -186,6 +216,7 @@
 		F80A80281DCC8BBE006C1E9F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FAB7324D1DCE37FD00CC2794 /* Calendar */,
 				F8B7758A1DCE2230005AEE0B /* RegionList */,
 				F80A80461DCD65B9006C1E9F /* TourPlanList */,
 				F80A80331DCCBDCF006C1E9F /* Top */,
@@ -331,6 +362,7 @@
 		F8A967931DCAC64A00EEA342 /* Tourist */ = {
 			isa = PBXGroup;
 			children = (
+				FA8FE8B61DCE5B39006B6ED5 /* Resource */,
 				F8A967941DCAC64A00EEA342 /* AppDelegate.swift */,
 				F80A802B1DCC8EA7006C1E9F /* View */,
 				F80A80281DCC8BBE006C1E9F /* ViewController */,
@@ -379,6 +411,41 @@
 				F8B775911DCE2261005AEE0B /* RegionItemCell.xib */,
 			);
 			name = RegionItem;
+			sourceTree = "<group>";
+		};
+		FA8FE8B51DCE5B28006B6ED5 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				FA8FE8B71DCE5B88006B6ED5 /* back.png */,
+				FA8FE8B81DCE5B88006B6ED5 /* bad.png */,
+				FA8FE8B91DCE5B88006B6ED5 /* decide.png */,
+				FA8FE8BA1DCE5B88006B6ED5 /* exportIcon.png */,
+				FA8FE8BB1DCE5B88006B6ED5 /* good.png */,
+				FA8FE8BC1DCE5B88006B6ED5 /* heart.png */,
+				FA8FE8BD1DCE5B88006B6ED5 /* heartPink.png */,
+				FA8FE8BE1DCE5B88006B6ED5 /* makeButton.png */,
+				FA8FE8BF1DCE5B88006B6ED5 /* mapIcon.png */,
+				FA8FE8C01DCE5B88006B6ED5 /* plusIcon.png */,
+				FA8FE8C11DCE5B88006B6ED5 /* searchIcon.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		FA8FE8B61DCE5B39006B6ED5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FA8FE8B51DCE5B28006B6ED5 /* Image */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		FAB7324D1DCE37FD00CC2794 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FAB7324E1DCE382500CC2794 /* CalendarViewController.swift */,
+				FAB732501DCE383F00CC2794 /* Calendar.storyboard */,
+			);
+			name = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,6 +507,7 @@
 				TargetAttributes = {
 					F8A967901DCAC64A00EEA342 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8589MH68KB;
 						ProvisioningStyle = Automatic;
 					};
 					F8A967A41DCAC64A00EEA342 = {
@@ -473,15 +541,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8FE8C71DCE5B88006B6ED5 /* heart.png in Resources */,
 				F8A9679F1DCAC64A00EEA342 /* LaunchScreen.storyboard in Resources */,
 				F80A80501DCD6778006C1E9F /* TourPlanCell.xib in Resources */,
+				FA8FE8C91DCE5B88006B6ED5 /* makeButton.png in Resources */,
+				FA8FE8CB1DCE5B88006B6ED5 /* plusIcon.png in Resources */,
+				FA8FE8C51DCE5B88006B6ED5 /* exportIcon.png in Resources */,
 				F80A80371DCCBE3E006C1E9F /* Top.storyboard in Resources */,
 				F8A9679C1DCAC64A00EEA342 /* Assets.xcassets in Resources */,
 				F8B7758D1DCE2240005AEE0B /* RegionList.storyboard in Resources */,
 				F80A803D1DCCC31B006C1E9F /* TouristSpotCell.xib in Resources */,
 				F8A9679A1DCAC64A00EEA342 /* MapTest.storyboard in Resources */,
+				FA8FE8C21DCE5B88006B6ED5 /* back.png in Resources */,
 				F8B775931DCE2261005AEE0B /* RegionItemCell.xib in Resources */,
+				FA8FE8C81DCE5B88006B6ED5 /* heartPink.png in Resources */,
+				FA8FE8C31DCE5B88006B6ED5 /* bad.png in Resources */,
+				FA8FE8C61DCE5B88006B6ED5 /* good.png in Resources */,
+				FAB732511DCE383F00CC2794 /* Calendar.storyboard in Resources */,
+				FA8FE8CA1DCE5B88006B6ED5 /* mapIcon.png in Resources */,
+				FA8FE8C41DCE5B88006B6ED5 /* decide.png in Resources */,
 				F80A804A1DCD6604006C1E9F /* TourPlanList.storyboard in Resources */,
+				FA8FE8CC1DCE5B88006B6ED5 /* searchIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +679,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftMessages.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FSCalendar.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -630,6 +711,7 @@
 			files = (
 				F8B7758E1DCE2240005AEE0B /* RegionListViewController.swift in Sources */,
 				F80A80481DCD65D6006C1E9F /* TourPlanListViewController.swift in Sources */,
+				FAB7324F1DCE382500CC2794 /* CalendarViewController.swift in Sources */,
 				F8B775651DCDC371005AEE0B /* TourSpot.swift in Sources */,
 				F8B775631DCDC24C005AEE0B /* TourPlan.swift in Sources */,
 				F8A967971DCAC64A00EEA342 /* MapTestViewController.swift in Sources */,
@@ -781,6 +863,7 @@
 			baseConfigurationReference = C47614B3F65B2B283C9F8E01 /* Pods-Tourist.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8589MH68KB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -799,6 +882,7 @@
 			baseConfigurationReference = 843809C03F8D105D5EA71A18 /* Pods-Tourist.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8589MH68KB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
