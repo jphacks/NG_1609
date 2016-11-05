@@ -19,19 +19,24 @@ final class TourSpot: Object {
     dynamic var detailDescription   : String = ""
     dynamic var imageUrl            : String = ""
     dynamic var kind                : String = ""
-    dynamic var requiredTime        : String = ""
+    dynamic var requiredTime        : Double = 0.0
     dynamic var requiredTimeSeconds : Int    = 0
-    dynamic var goodCount           : Int    = 0
-    dynamic var badCount            : Int    = 0
-    dynamic var latitude            : Double = 0.0
-    dynamic var longtitude          : Double = 0.0
+    dynamic var latitude            : String = ""
+    dynamic var longtitude          : String = ""
 
-    convenience init(spotId: Int, latitude: Double, longtitude: Double, description: String) {
+
+    convenience init(spotId: Int, regionId: Int, name: String, latitude: String, longtitude: String, description: String, imageUrl: String, kind: String, requiredTime: Double) {
         self.init()
 
         self.spotId = spotId
+        self.regionId = regionId
+        self.name = name
         self.latitude = latitude
         self.longtitude = longtitude
+        self.detailDescription = description
+        self.imageUrl = imageUrl
+        self.kind = kind
+        self.requiredTime = requiredTime
     }
 
     override static func primaryKey() -> String? {
@@ -48,9 +53,14 @@ extension TourSpot: Decodable {
     static func decode(_ e: Extractor) throws -> TourSpot {
         return try TourSpot(
             spotId      : e <| "id",
+            regionId    : e <| "region_id",
+            name        : e <| "name",
             latitude    : e <| "latitude",
             longtitude  : e <| "longitude",
-            description : e <| "description"
+            description : e <| "description",
+            imageUrl    : e <| "imageUrl",
+            kind        : e <| "kind",
+            requiredTime: e <| "requiredTime"
             )
     }
 

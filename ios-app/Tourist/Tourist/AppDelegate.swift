@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import APIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
+        // for Test
+//        let request1 = GetRegionsRequest()
+//        Session.send(request1) { result in
+//            switch result {
+//            case .success(let regions):
+//                print(regions)
+//
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+//
+//        let request2 = GetLocationsRequest()
+//        Session.send(request2) { result in
+//            switch result {
+//            case .success(let locations):
+//                print(locations)
+//
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+//
+//        let request3 = GetRegionLocationsRequest(regionId: 3)
+//        Session.send(request3) { result in
+//            switch result {
+//            case .success(let regions):
+//                print(regions)
+//
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
 
         return true
     }

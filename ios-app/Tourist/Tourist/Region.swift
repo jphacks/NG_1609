@@ -8,13 +8,16 @@
 
 import Foundation
 import RealmSwift
+import Himotoki
 
 
 final class Region: Object {
 
-    dynamic var regionId    : Int = 0
-    dynamic var name        : String = ""
-    dynamic var imageUrl    : String = ""
+    dynamic var regionId   : Int    = 0
+    dynamic var name       : String = ""
+    dynamic var imageUrl   : String = ""
+    dynamic var createdAt  : String = ""
+    dynamic var updatedAt  : String = ""
 
 
     convenience init(regionId: Int, name: String, imageUrl: String) {
@@ -25,20 +28,18 @@ final class Region: Object {
         self.imageUrl = imageUrl
     }
 
-    func saveDefaultValue() {
-        let regions = [
-            Region(regionId: 0, name: "Tokyo", imageUrl: ""),
-            Region(regionId: 1, name: "Kyoto", imageUrl: ""),
-            Region(regionId: 2, name: "Okinawa", imageUrl: ""),
-        ]
+}
 
-        do {
-            let realm = try Realm()
-            realm.add(regions)
-        } catch {
-            // TODO: Error
-            print(error)
-        }
+
+// MARK: - :Decodable
+
+extension Region: Decodable {
+
+    static func decode(_ e: Extractor) throws -> Region {
+        return try Region(regionId  : e <| "id",
+                          name      : e <| "name",
+                          imageUrl  : e <| "imageUrl"
+        )
     }
 
 }

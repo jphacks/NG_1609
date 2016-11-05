@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location List View Controller-->
+        <scene sceneID="kgC-0k-POS">
+            <objects>
+                <collectionViewController id="20V-HJ-FmD" customClass="LocationListViewController" customModule="Tourist" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="mmp-cT-Fem">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="t61-2S-nbx">
+                            <size key="itemSize" width="340" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RegionTitleCell" id="J34-e0-2MM">
+                                <rect key="frame" x="18" y="0.0" width="340" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="340" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPX-nW-jSP">
+                                            <rect key="frame" x="0.0" y="132" width="100" height="2"/>
+                                            <color key="backgroundColor" cyan="0.0" magenta="0.94999999999999996" yellow="0.69999999999999996" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="TOf-ae-A30"/>
+                                                <constraint firstAttribute="height" constant="2" id="TsU-8l-ugY"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地域を選ぶ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arq-uv-l3K">
+                                            <rect key="frame" x="0.0" y="76" width="332" height="48"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            <color key="textColor" red="0.4431372549" green="0.4431372549" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="arq-uv-l3K" firstAttribute="leading" secondItem="J34-e0-2MM" secondAttribute="leading" id="35s-Vx-BZO"/>
+                                    <constraint firstItem="dPX-nW-jSP" firstAttribute="top" secondItem="arq-uv-l3K" secondAttribute="bottom" constant="8" id="OMG-4N-z3b"/>
+                                    <constraint firstAttribute="trailing" secondItem="arq-uv-l3K" secondAttribute="trailing" constant="8" id="Yuy-NH-aXU"/>
+                                    <constraint firstItem="dPX-nW-jSP" firstAttribute="leading" secondItem="arq-uv-l3K" secondAttribute="leading" id="caR-NZ-0Eu"/>
+                                    <constraint firstItem="arq-uv-l3K" firstAttribute="centerY" secondItem="J34-e0-2MM" secondAttribute="centerY" id="tbo-aX-kGp"/>
+                                </constraints>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="20V-HJ-FmD" id="FtG-rK-kVR"/>
+                            <outlet property="delegate" destination="20V-HJ-FmD" id="aLj-FJ-ubO"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VGU-lX-EiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-311.19999999999999" y="190.25487256371815"/>
+        </scene>
+    </scenes>
+</document>
