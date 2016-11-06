@@ -16,7 +16,7 @@
 ![XD](https://img.shields.io/badge/XD-0.6.2.7-ff69b4.svg)
 
 ## 製品概要
-### TourTech　(Tourism X Technology)
+### Tourism X Technology
 **旅行をもっと楽しく、面白く、効率的に** 
 東京オリンピックが２０２０年に開催され、日本での「**観光**」に注目が集まっています。
 より良い日本での観光を提供したいと考え、「**観光**」 を 「**テクノロジー**」　を使って改善してみました！
