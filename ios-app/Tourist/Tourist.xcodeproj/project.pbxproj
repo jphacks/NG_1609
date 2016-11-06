@@ -53,6 +53,8 @@
 		F8B775A41DCE7574005AEE0B /* RegionLocationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775A31DCE7574005AEE0B /* RegionLocationHeaderView.swift */; };
 		F8E496961DCEBDBD00ECF88E /* LocationItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E496941DCEBDBD00ECF88E /* LocationItemCell.swift */; };
 		F8E496971DCEBDBD00ECF88E /* LocationItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8E496951DCEBDBD00ECF88E /* LocationItemCell.xib */; };
+		F8E4969A1DCEC8A600ECF88E /* PlanSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E496991DCEC8A600ECF88E /* PlanSetViewController.swift */; };
+		F8E4969C1DCEC95600ECF88E /* PlanSetViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E4969B1DCEC95600ECF88E /* PlanSetViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +136,8 @@
 		F8B775A31DCE7574005AEE0B /* RegionLocationHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionLocationHeaderView.swift; sourceTree = "<group>"; };
 		F8E496941DCEBDBD00ECF88E /* LocationItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationItemCell.swift; sourceTree = "<group>"; };
 		F8E496951DCEBDBD00ECF88E /* LocationItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationItemCell.xib; sourceTree = "<group>"; };
+		F8E496991DCEC8A600ECF88E /* PlanSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanSetViewController.swift; sourceTree = "<group>"; };
+		F8E4969B1DCEC95600ECF88E /* PlanSetViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlanSetViewController.storyboard; sourceTree = "<group>"; };
 		FFE9E950029DEFEFB4B2DD82 /* Pods_Tourist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tourist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -200,6 +204,7 @@
 		F80A80281DCC8BBE006C1E9F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F8E496981DCEC86C00ECF88E /* PlanSet */,
 				F8B7759C1DCE602C005AEE0B /* LocationList */,
 				F8B7758A1DCE2230005AEE0B /* RegionList */,
 				F80A80461DCD65B9006C1E9F /* TourPlanList */,
@@ -426,6 +431,15 @@
 			name = LocationItem;
 			sourceTree = "<group>";
 		};
+		F8E496981DCEC86C00ECF88E /* PlanSet */ = {
+			isa = PBXGroup;
+			children = (
+				F8E496991DCEC8A600ECF88E /* PlanSetViewController.swift */,
+				F8E4969B1DCEC95600ECF88E /* PlanSetViewController.storyboard */,
+			);
+			name = PlanSet;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -528,6 +542,7 @@
 				F80A803D1DCCC31B006C1E9F /* TouristSpotCell.xib in Resources */,
 				F8A9679A1DCAC64A00EEA342 /* MapTestViewController.storyboard in Resources */,
 				F8B775931DCE2261005AEE0B /* RegionItemCell.xib in Resources */,
+				F8E4969C1DCEC95600ECF88E /* PlanSetViewController.storyboard in Resources */,
 				F80A804A1DCD6604006C1E9F /* TourPlanListViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -693,6 +708,7 @@
 				F8B775951DCE2377005AEE0B /* Region.swift in Sources */,
 				F80A80431DCCF1F4006C1E9F /* NSObject+.swift in Sources */,
 				F8A967951DCAC64A00EEA342 /* AppDelegate.swift in Sources */,
+				F8E4969A1DCEC8A600ECF88E /* PlanSetViewController.swift in Sources */,
 				F80A80311DCC9AD9006C1E9F /* Constants.swift in Sources */,
 				F8B775921DCE2261005AEE0B /* RegionItemCell.swift in Sources */,
 				F8E496961DCEBDBD00ECF88E /* LocationItemCell.swift in Sources */,

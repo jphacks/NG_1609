@@ -36,14 +36,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvT-6e-Umb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="206"/>
+            <point key="canvasLocation" x="513" y="206"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O8A-Aq-AAd">
             <objects>
                 <navigationController storyboardIdentifier="TourPlanListViewController" automaticallyAdjustsScrollViewInsets="NO" id="0kx-Py-PbB" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Oqz-Fq-Bvz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Oqz-Fq-Bvz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
