@@ -51,6 +51,8 @@
 		F8B775A01DCE61E4005AEE0B /* LocationListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B7759F1DCE61E4005AEE0B /* LocationListViewController.storyboard */; };
 		F8B775A21DCE65F4005AEE0B /* Storyboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775A11DCE65F4005AEE0B /* Storyboard+.swift */; };
 		F8B775A41DCE7574005AEE0B /* RegionLocationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775A31DCE7574005AEE0B /* RegionLocationHeaderView.swift */; };
+		F8E496961DCEBDBD00ECF88E /* LocationItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E496941DCEBDBD00ECF88E /* LocationItemCell.swift */; };
+		F8E496971DCEBDBD00ECF88E /* LocationItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8E496951DCEBDBD00ECF88E /* LocationItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +132,8 @@
 		F8B7759F1DCE61E4005AEE0B /* LocationListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LocationListViewController.storyboard; sourceTree = "<group>"; };
 		F8B775A11DCE65F4005AEE0B /* Storyboard+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+.swift"; sourceTree = "<group>"; };
 		F8B775A31DCE7574005AEE0B /* RegionLocationHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionLocationHeaderView.swift; sourceTree = "<group>"; };
+		F8E496941DCEBDBD00ECF88E /* LocationItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationItemCell.swift; sourceTree = "<group>"; };
+		F8E496951DCEBDBD00ECF88E /* LocationItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationItemCell.xib; sourceTree = "<group>"; };
 		FFE9E950029DEFEFB4B2DD82 /* Pods_Tourist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tourist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -416,6 +420,8 @@
 		F8E496931DCEBCE100ECF88E /* LocationItem */ = {
 			isa = PBXGroup;
 			children = (
+				F8E496941DCEBDBD00ECF88E /* LocationItemCell.swift */,
+				F8E496951DCEBDBD00ECF88E /* LocationItemCell.xib */,
 			);
 			name = LocationItem;
 			sourceTree = "<group>";
@@ -518,6 +524,7 @@
 				F8A9679C1DCAC64A00EEA342 /* Assets.xcassets in Resources */,
 				F8B775A01DCE61E4005AEE0B /* LocationListViewController.storyboard in Resources */,
 				F8B7758D1DCE2240005AEE0B /* RegionListViewController.storyboard in Resources */,
+				F8E496971DCEBDBD00ECF88E /* LocationItemCell.xib in Resources */,
 				F80A803D1DCCC31B006C1E9F /* TouristSpotCell.xib in Resources */,
 				F8A9679A1DCAC64A00EEA342 /* MapTestViewController.storyboard in Resources */,
 				F8B775931DCE2261005AEE0B /* RegionItemCell.xib in Resources */,
@@ -688,6 +695,7 @@
 				F8A967951DCAC64A00EEA342 /* AppDelegate.swift in Sources */,
 				F80A80311DCC9AD9006C1E9F /* Constants.swift in Sources */,
 				F8B775921DCE2261005AEE0B /* RegionItemCell.swift in Sources */,
+				F8E496961DCEBDBD00ECF88E /* LocationItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
