@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        UINavigationBar.appearance().backIndicatorImage = #imageLiteral(resourceName: "back").withRenderingMode(.alwaysOriginal)
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = #imageLiteral(resourceName: "back").withRenderingMode(.alwaysOriginal)
+
         // for Test
 //        let request1 = GetRegionsRequest()
 //        Session.send(request1) { result in
