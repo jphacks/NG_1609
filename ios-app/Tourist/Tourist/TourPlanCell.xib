@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,11 +23,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
                     </imageView>
                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EnH-CA-tdv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9i-RH-89K">
-                        <rect key="frame" x="41" y="81" width="5" height="37.5"/>
+                        <rect key="frame" x="41" y="81" width="5" height="38"/>
                         <color key="backgroundColor" red="0.58023238526728427" green="0.8130208333333333" blue="0.43537275532892272" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="5" id="XEq-Q0-a5k"/>
@@ -58,7 +58,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvq-Sv-zpG">
-                        <rect key="frame" x="73" y="46.5" width="36" height="24"/>
+                        <rect key="frame" x="73" y="47" width="36" height="24"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="36" id="hoB-Mn-foG"/>
                         </constraints>
@@ -175,7 +175,7 @@
                 <outlet property="timeBetweenLabel" destination="cvq-Sv-zpG" id="amJ-wI-0OL"/>
                 <outlet property="titleLabel" destination="jbT-Xf-XiO" id="W5b-qN-ZeM"/>
             </connections>
-            <point key="canvasLocation" x="34" y="91"/>
+            <point key="canvasLocation" x="-101" y="55"/>
         </tableViewCell>
     </objects>
 </document>

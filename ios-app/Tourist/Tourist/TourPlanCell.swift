@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 final class TourPlanCell: UITableViewCell, NibReusableCell {
 
@@ -74,6 +75,14 @@ final class TourPlanCell: UITableViewCell, NibReusableCell {
         endWeatherImageView.image = endWeather.image
         centerWeatherImageView.image = #imageLiteral(resourceName: "arrow")
         degreeLabel.text = "\(degree.rounded())℃"
+    }
+
+    func updateCell(tourId: Int) {
+        let realm = try! Realm()
+        guard let tour = realm.object(ofType: TourPlan.self, forPrimaryKey: tourId) else { return }
+        titleLabel.text = tour.title
+        startTimeLabel.text = tour.startTime
+        endTimeLabel.text = tour.endTime
     }
 
 }

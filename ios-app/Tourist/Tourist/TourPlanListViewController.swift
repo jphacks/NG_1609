@@ -7,18 +7,26 @@
 //
 
 import UIKit
+import RealmSwift
 
 
 final class TourPlanListViewController: UITableViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        fileprivate var tourPlan: TourPlan!
+        var planId: Int = 0
 
-        tableView.register(withNibClass: TourPlanCell.self)
-    }
+        override func viewDidLoad() {
+            super.viewDidLoad()
+
+            tableView.register(withNibClass: TourPlanCell.self)
+
+            guard let realm = try? Realm() else { fatalError() }
+            tourPlan = realm.object(ofType: TourPlan.self, forPrimaryKey: planId)
+
+        }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return tourPlan.items.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -28,10 +36,12 @@ final class TourPlanListViewController: UITableViewController {
         case 9:  cell.setLine(type: .last)
         default: cell.setLine(type: .center)
         }
-        cell.setWeather(startWhether: .sun, endWeather: .cloud, degree: 14)
+        cell.updateCell(title: tourPlan.items[indexPath.row].title)
+        cell.setWeather(startWhether: .sun, endWeather: .cloud, degree: Double(arc4random() % 20))
 
         return cell
     }
+
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
