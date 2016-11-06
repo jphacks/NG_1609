@@ -12,18 +12,18 @@
 		D8B4C536D831AF75EF646D24 /* Pods_TouristTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BCC53E50AAE1593EDFE085D /* Pods_TouristTests.framework */; };
 		F80A80311DCC9AD9006C1E9F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A80301DCC9AD9006C1E9F /* Constants.swift */; };
 		F80A80351DCCBE16006C1E9F /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A80341DCCBE16006C1E9F /* TopViewController.swift */; };
-		F80A80371DCCBE3E006C1E9F /* TopViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80A80361DCCBE3E006C1E9F /* TopViewController.storyboard */; };
+		F80A80371DCCBE3E006C1E9F /* Top.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80A80361DCCBE3E006C1E9F /* Top.storyboard */; };
 		F80A803C1DCCC31B006C1E9F /* TouristSpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A803A1DCCC31B006C1E9F /* TouristSpotCell.swift */; };
 		F80A803D1DCCC31B006C1E9F /* TouristSpotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80A803B1DCCC31B006C1E9F /* TouristSpotCell.xib */; };
 		F80A803F1DCCC906006C1E9F /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A803E1DCCC906006C1E9F /* ReusableCell.swift */; };
 		F80A80431DCCF1F4006C1E9F /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A80421DCCF1F4006C1E9F /* NSObject+.swift */; };
 		F80A80481DCD65D6006C1E9F /* TourPlanListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A80471DCD65D6006C1E9F /* TourPlanListViewController.swift */; };
-		F80A804A1DCD6604006C1E9F /* TourPlanListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80A80491DCD6604006C1E9F /* TourPlanListViewController.storyboard */; };
+		F80A804A1DCD6604006C1E9F /* TourPlanList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80A80491DCD6604006C1E9F /* TourPlanList.storyboard */; };
 		F80A804F1DCD6778006C1E9F /* TourPlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A804D1DCD6778006C1E9F /* TourPlanCell.swift */; };
 		F80A80501DCD6778006C1E9F /* TourPlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80A804E1DCD6778006C1E9F /* TourPlanCell.xib */; };
 		F8A967951DCAC64A00EEA342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A967941DCAC64A00EEA342 /* AppDelegate.swift */; };
 		F8A967971DCAC64A00EEA342 /* MapTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A967961DCAC64A00EEA342 /* MapTestViewController.swift */; };
-		F8A9679A1DCAC64A00EEA342 /* MapTestViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A967981DCAC64A00EEA342 /* MapTestViewController.storyboard */; };
+		F8A9679A1DCAC64A00EEA342 /* MapTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A967981DCAC64A00EEA342 /* MapTest.storyboard */; };
 		F8A9679C1DCAC64A00EEA342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A9679B1DCAC64A00EEA342 /* Assets.xcassets */; };
 		F8A9679F1DCAC64A00EEA342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A9679D1DCAC64A00EEA342 /* LaunchScreen.storyboard */; };
 		F8A967AA1DCAC64A00EEA342 /* TouristTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A967A91DCAC64A00EEA342 /* TouristTests.swift */; };
@@ -41,20 +41,14 @@
 		F8B775631DCDC24C005AEE0B /* TourPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775621DCDC24C005AEE0B /* TourPlan.swift */; };
 		F8B775651DCDC371005AEE0B /* TourSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775641DCDC371005AEE0B /* TourSpot.swift */; };
 		F8B775671DCDC9F2005AEE0B /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775661DCDC9F2005AEE0B /* Weather.swift */; };
-		F8B7758D1DCE2240005AEE0B /* RegionListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B7758B1DCE2240005AEE0B /* RegionListViewController.storyboard */; };
+		F8B7758D1DCE2240005AEE0B /* RegionList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B7758B1DCE2240005AEE0B /* RegionList.storyboard */; };
 		F8B7758E1DCE2240005AEE0B /* RegionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7758C1DCE2240005AEE0B /* RegionListViewController.swift */; };
 		F8B775921DCE2261005AEE0B /* RegionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775901DCE2261005AEE0B /* RegionItemCell.swift */; };
 		F8B775931DCE2261005AEE0B /* RegionItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B775911DCE2261005AEE0B /* RegionItemCell.xib */; };
 		F8B775951DCE2377005AEE0B /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775941DCE2377005AEE0B /* Region.swift */; };
-		F8B775981DCE2741005AEE0B /* TourhythmRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B775971DCE2741005AEE0B /* TourhythmRequest.swift */; };
-		F8B7759E1DCE6061005AEE0B /* LocationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7759D1DCE6061005AEE0B /* LocationListViewController.swift */; };
-		F8B775A01DCE61E4005AEE0B /* LocationListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B7759F1DCE61E4005AEE0B /* LocationListViewController.storyboard */; };
-		FA2D49F61DCEB35C0027B48F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D49F51DCEB35C0027B48F /* RootViewController.swift */; };
-		FA2D49F81DCEB4400027B48F /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2D49F71DCEB4400027B48F /* Root.storyboard */; };
-		FA2D49FB1DCEBD7B0027B48F /* TGLParallaxCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D49F91DCEBD7B0027B48F /* TGLParallaxCarousel.swift */; };
-		FA2D49FC1DCEBD7B0027B48F /* TGLParallaxCarousel.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2D49FA1DCEBD7B0027B48F /* TGLParallaxCarousel.xib */; };
-		FA2D49FE1DCEBEC70027B48F /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D49FD1DCEBEC70027B48F /* CarouselView.swift */; };
-		FA2D4A001DCEBED90027B48F /* CarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2D49FF1DCEBED90027B48F /* CarouselView.xib */; };
+		FA8FE8B41DCE4B93006B6ED5 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8FE8B31DCE4B93006B6ED5 /* FSCalendar.framework */; };
+		FAB7324F1DCE382500CC2794 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB7324E1DCE382500CC2794 /* CalendarViewController.swift */; };
+		FAB732511DCE383F00CC2794 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB732501DCE383F00CC2794 /* Calendar.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,19 +87,19 @@
 		C4A7524296331652C2A40553 /* Pods-Tourist-TouristTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourist-TouristTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tourist-TouristTests/Pods-Tourist-TouristTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F80A80301DCC9AD9006C1E9F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F80A80341DCCBE16006C1E9F /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
-		F80A80361DCCBE3E006C1E9F /* TopViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopViewController.storyboard; sourceTree = "<group>"; };
+		F80A80361DCCBE3E006C1E9F /* Top.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Top.storyboard; sourceTree = "<group>"; };
 		F80A803A1DCCC31B006C1E9F /* TouristSpotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouristSpotCell.swift; sourceTree = "<group>"; };
 		F80A803B1DCCC31B006C1E9F /* TouristSpotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouristSpotCell.xib; sourceTree = "<group>"; };
 		F80A803E1DCCC906006C1E9F /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		F80A80421DCCF1F4006C1E9F /* NSObject+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
 		F80A80471DCD65D6006C1E9F /* TourPlanListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourPlanListViewController.swift; sourceTree = "<group>"; };
-		F80A80491DCD6604006C1E9F /* TourPlanListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TourPlanListViewController.storyboard; sourceTree = "<group>"; };
+		F80A80491DCD6604006C1E9F /* TourPlanList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TourPlanList.storyboard; sourceTree = "<group>"; };
 		F80A804D1DCD6778006C1E9F /* TourPlanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourPlanCell.swift; sourceTree = "<group>"; };
 		F80A804E1DCD6778006C1E9F /* TourPlanCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourPlanCell.xib; sourceTree = "<group>"; };
 		F8A967911DCAC64A00EEA342 /* Tourist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tourist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A967941DCAC64A00EEA342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8A967961DCAC64A00EEA342 /* MapTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTestViewController.swift; sourceTree = "<group>"; };
-		F8A967991DCAC64A00EEA342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MapTestViewController.storyboard; sourceTree = "<group>"; };
+		F8A967991DCAC64A00EEA342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MapTest.storyboard; sourceTree = "<group>"; };
 		F8A9679B1DCAC64A00EEA342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8A9679E1DCAC64A00EEA342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8A967A01DCAC64A00EEA342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,20 +118,14 @@
 		F8B775621DCDC24C005AEE0B /* TourPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourPlan.swift; sourceTree = "<group>"; };
 		F8B775641DCDC371005AEE0B /* TourSpot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourSpot.swift; sourceTree = "<group>"; };
 		F8B775661DCDC9F2005AEE0B /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		F8B7758B1DCE2240005AEE0B /* RegionListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegionListViewController.storyboard; sourceTree = "<group>"; };
+		F8B7758B1DCE2240005AEE0B /* RegionList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegionList.storyboard; sourceTree = "<group>"; };
 		F8B7758C1DCE2240005AEE0B /* RegionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionListViewController.swift; sourceTree = "<group>"; };
 		F8B775901DCE2261005AEE0B /* RegionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionItemCell.swift; sourceTree = "<group>"; };
 		F8B775911DCE2261005AEE0B /* RegionItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegionItemCell.xib; sourceTree = "<group>"; };
 		F8B775941DCE2377005AEE0B /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
-		F8B775971DCE2741005AEE0B /* TourhythmRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourhythmRequest.swift; sourceTree = "<group>"; };
-		F8B7759D1DCE6061005AEE0B /* LocationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationListViewController.swift; sourceTree = "<group>"; };
-		F8B7759F1DCE61E4005AEE0B /* LocationListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LocationListViewController.storyboard; sourceTree = "<group>"; };
-		FA2D49F51DCEB35C0027B48F /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		FA2D49F71DCEB4400027B48F /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
-		FA2D49F91DCEBD7B0027B48F /* TGLParallaxCarousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGLParallaxCarousel.swift; sourceTree = "<group>"; };
-		FA2D49FA1DCEBD7B0027B48F /* TGLParallaxCarousel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGLParallaxCarousel.xib; sourceTree = "<group>"; };
-		FA2D49FD1DCEBEC70027B48F /* CarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
-		FA2D49FF1DCEBED90027B48F /* CarouselView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselView.xib; sourceTree = "<group>"; };
+		FA8FE8B31DCE4B93006B6ED5 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = "<group>"; };
+		FAB7324E1DCE382500CC2794 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		FAB732501DCE383F00CC2794 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		FFE9E950029DEFEFB4B2DD82 /* Pods_Tourist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tourist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -146,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8FE8B41DCE4B93006B6ED5 /* FSCalendar.framework in Frameworks */,
 				1E557977C1BFB3E952060A30 /* Pods_Tourist.framework in Frameworks */,
 				F8B775551DCDC10D005AEE0B /* Eureka.framework in Frameworks */,
 				F8B775591DCDC10D005AEE0B /* RealmSwift.framework in Frameworks */,
@@ -186,6 +175,7 @@
 		4C6F4882E3446DB671AAFC92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA8FE8B31DCE4B93006B6ED5 /* FSCalendar.framework */,
 				F8B7755B1DCDC122005AEE0B /* APIKit.framework */,
 				F8B7755C1DCDC122005AEE0B /* Result.framework */,
 				F8B7754F1DCDC10D005AEE0B /* Eureka.framework */,
@@ -204,8 +194,7 @@
 		F80A80281DCC8BBE006C1E9F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FA2D49F41DCEB3350027B48F /* Root */,
-				F8B7759C1DCE602C005AEE0B /* LocationList */,
+				FAB7324D1DCE37FD00CC2794 /* Calendar */,
 				F8B7758A1DCE2230005AEE0B /* RegionList */,
 				F80A80461DCD65B9006C1E9F /* TourPlanList */,
 				F80A80331DCCBDCF006C1E9F /* Top */,
@@ -227,7 +216,6 @@
 		F80A802A1DCC8BE8006C1E9F /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				F8B775961DCE2726005AEE0B /* Request */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -235,7 +223,6 @@
 		F80A802B1DCC8EA7006C1E9F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FA2D4A011DCEBEFE0027B48F /* CarouselView */,
 				F80A80391DCCC224006C1E9F /* CollectionCell */,
 				F80A80381DCCC217006C1E9F /* TableCell */,
 			);
@@ -272,7 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				F8A967961DCAC64A00EEA342 /* MapTestViewController.swift */,
-				F8A967981DCAC64A00EEA342 /* MapTestViewController.storyboard */,
+				F8A967981DCAC64A00EEA342 /* MapTest.storyboard */,
 			);
 			name = MapTest;
 			sourceTree = "<group>";
@@ -281,7 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				F80A80341DCCBE16006C1E9F /* TopViewController.swift */,
-				F80A80361DCCBE3E006C1E9F /* TopViewController.storyboard */,
+				F80A80361DCCBE3E006C1E9F /* Top.storyboard */,
 			);
 			name = Top;
 			sourceTree = "<group>";
@@ -307,7 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				F80A80471DCD65D6006C1E9F /* TourPlanListViewController.swift */,
-				F80A80491DCD6604006C1E9F /* TourPlanListViewController.storyboard */,
+				F80A80491DCD6604006C1E9F /* TourPlanList.storyboard */,
 			);
 			name = TourPlanList;
 			sourceTree = "<group>";
@@ -389,7 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				F8B7758C1DCE2240005AEE0B /* RegionListViewController.swift */,
-				F8B7758B1DCE2240005AEE0B /* RegionListViewController.storyboard */,
+				F8B7758B1DCE2240005AEE0B /* RegionList.storyboard */,
 			);
 			name = RegionList;
 			sourceTree = "<group>";
@@ -403,41 +390,13 @@
 			name = RegionItem;
 			sourceTree = "<group>";
 		};
-		F8B775961DCE2726005AEE0B /* Request */ = {
+		FAB7324D1DCE37FD00CC2794 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				F8B775971DCE2741005AEE0B /* TourhythmRequest.swift */,
+				FAB7324E1DCE382500CC2794 /* CalendarViewController.swift */,
+				FAB732501DCE383F00CC2794 /* Calendar.storyboard */,
 			);
-			name = Request;
-			sourceTree = "<group>";
-		};
-		F8B7759C1DCE602C005AEE0B /* LocationList */ = {
-			isa = PBXGroup;
-			children = (
-				F8B7759D1DCE6061005AEE0B /* LocationListViewController.swift */,
-				F8B7759F1DCE61E4005AEE0B /* LocationListViewController.storyboard */,
-			);
-			name = LocationList;
-			sourceTree = "<group>";
-		};
-		FA2D49F41DCEB3350027B48F /* Root */ = {
-			isa = PBXGroup;
-			children = (
-				FA2D49F91DCEBD7B0027B48F /* TGLParallaxCarousel.swift */,
-				FA2D49FA1DCEBD7B0027B48F /* TGLParallaxCarousel.xib */,
-				FA2D49F51DCEB35C0027B48F /* RootViewController.swift */,
-				FA2D49F71DCEB4400027B48F /* Root.storyboard */,
-			);
-			name = Root;
-			sourceTree = "<group>";
-		};
-		FA2D4A011DCEBEFE0027B48F /* CarouselView */ = {
-			isa = PBXGroup;
-			children = (
-				FA2D49FD1DCEBEC70027B48F /* CarouselView.swift */,
-				FA2D49FF1DCEBED90027B48F /* CarouselView.xib */,
-			);
-			name = CarouselView;
+			name = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -535,17 +494,14 @@
 			files = (
 				F8A9679F1DCAC64A00EEA342 /* LaunchScreen.storyboard in Resources */,
 				F80A80501DCD6778006C1E9F /* TourPlanCell.xib in Resources */,
-				FA2D49FC1DCEBD7B0027B48F /* TGLParallaxCarousel.xib in Resources */,
-				F80A80371DCCBE3E006C1E9F /* TopViewController.storyboard in Resources */,
+				F80A80371DCCBE3E006C1E9F /* Top.storyboard in Resources */,
 				F8A9679C1DCAC64A00EEA342 /* Assets.xcassets in Resources */,
-				FA2D4A001DCEBED90027B48F /* CarouselView.xib in Resources */,
-				F8B775A01DCE61E4005AEE0B /* LocationListViewController.storyboard in Resources */,
-				F8B7758D1DCE2240005AEE0B /* RegionListViewController.storyboard in Resources */,
+				F8B7758D1DCE2240005AEE0B /* RegionList.storyboard in Resources */,
 				F80A803D1DCCC31B006C1E9F /* TouristSpotCell.xib in Resources */,
-				F8A9679A1DCAC64A00EEA342 /* MapTestViewController.storyboard in Resources */,
+				F8A9679A1DCAC64A00EEA342 /* MapTest.storyboard in Resources */,
 				F8B775931DCE2261005AEE0B /* RegionItemCell.xib in Resources */,
-				F80A804A1DCD6604006C1E9F /* TourPlanListViewController.storyboard in Resources */,
-				FA2D49F81DCEB4400027B48F /* Root.storyboard in Resources */,
+				FAB732511DCE383F00CC2794 /* Calendar.storyboard in Resources */,
+				F80A804A1DCD6604006C1E9F /* TourPlanList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +619,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftMessages.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FSCalendar.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -692,15 +649,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8B7759E1DCE6061005AEE0B /* LocationListViewController.swift in Sources */,
 				F8B7758E1DCE2240005AEE0B /* RegionListViewController.swift in Sources */,
-				FA2D49F61DCEB35C0027B48F /* RootViewController.swift in Sources */,
 				F80A80481DCD65D6006C1E9F /* TourPlanListViewController.swift in Sources */,
-				FA2D49FE1DCEBEC70027B48F /* CarouselView.swift in Sources */,
+				FAB7324F1DCE382500CC2794 /* CalendarViewController.swift in Sources */,
 				F8B775651DCDC371005AEE0B /* TourSpot.swift in Sources */,
 				F8B775631DCDC24C005AEE0B /* TourPlan.swift in Sources */,
 				F8A967971DCAC64A00EEA342 /* MapTestViewController.swift in Sources */,
-				F8B775981DCE2741005AEE0B /* TourhythmRequest.swift in Sources */,
 				F80A80351DCCBE16006C1E9F /* TopViewController.swift in Sources */,
 				F8B7754E1DCDC0BB005AEE0B /* TourPlanItem.swift in Sources */,
 				F80A804F1DCD6778006C1E9F /* TourPlanCell.swift in Sources */,
@@ -711,7 +665,6 @@
 				F80A80431DCCF1F4006C1E9F /* NSObject+.swift in Sources */,
 				F8A967951DCAC64A00EEA342 /* AppDelegate.swift in Sources */,
 				F80A80311DCC9AD9006C1E9F /* Constants.swift in Sources */,
-				FA2D49FB1DCEBD7B0027B48F /* TGLParallaxCarousel.swift in Sources */,
 				F8B775921DCE2261005AEE0B /* RegionItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -735,12 +688,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F8A967981DCAC64A00EEA342 /* MapTestViewController.storyboard */ = {
+		F8A967981DCAC64A00EEA342 /* MapTest.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F8A967991DCAC64A00EEA342 /* Base */,
 			);
-			name = MapTestViewController.storyboard;
+			name = MapTest.storyboard;
 			sourceTree = "<group>";
 		};
 		F8A9679D1DCAC64A00EEA342 /* LaunchScreen.storyboard */ = {
