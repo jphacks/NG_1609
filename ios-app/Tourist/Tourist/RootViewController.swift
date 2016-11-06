@@ -9,13 +9,21 @@
 import UIKit
 import APIKit
 import RealmSwift
-
+import SwiftGifOrigin
 
 class RootViewController: UIViewController {
 
+    @IBOutlet weak var imageview: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-         }
+        imageview.loadGif(name: "2sec")
+    }
 
+    @IBAction func tappedButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "RegionListViewController", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController()
+        show(vc!, sender: self)
+    }
 
   }

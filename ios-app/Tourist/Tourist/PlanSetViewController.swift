@@ -86,6 +86,13 @@ extension PlanSetViewController: UICollectionViewDataSource, UICollectionViewDel
             plan.planId = realm.objects(TourPlan.self).count
             plan.title = realm.object(ofType: Region.self, forPrimaryKey: regionId)?.name ?? ""
             plan.items.append(objectsIn: tourItems)
+            try! realm.write {
+                realm.add(plan)
+            }
+            let vc = TourPlanListViewController.instantiate()
+            vc.planId = plan.planId
+            navigationController?.pushViewController(vc, animated: true)
+
         } else {
             let location = locations[indexPath.row]
             print(location)

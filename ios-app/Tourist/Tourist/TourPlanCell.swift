@@ -61,9 +61,14 @@ final class TourPlanCell: UITableViewCell, NibReusableCell {
         switch type {
         case .top:
             backLine.isHidden = true
+            logoImageView.image = #imageLiteral(resourceName: "start")
+
         case .last:
             nextLine.isHidden = true
-        default: break
+            logoImageView.image = #imageLiteral(resourceName: "goal")
+
+        default:
+            logoImageView.image = #imageLiteral(resourceName: "place")
         }
 
         backLine.backgroundColor = backLineColor ?? defaultLineColor

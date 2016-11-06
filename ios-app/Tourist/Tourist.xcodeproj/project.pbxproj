@@ -56,6 +56,10 @@
 		F8E4969A1DCEC8A600ECF88E /* PlanSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E496991DCEC8A600ECF88E /* PlanSetViewController.swift */; };
 		F8E4969C1DCEC95600ECF88E /* PlanSetViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E4969B1DCEC95600ECF88E /* PlanSetViewController.storyboard */; };
 		F8E4969E1DCEE9C000ECF88E /* LocationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E4969D1DCEE9C000ECF88E /* LocationsResponse.swift */; };
+		F8E496A01DCEF74D00ECF88E /* RouteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E4969F1DCEF74D00ECF88E /* RouteResponse.swift */; };
+		F8E496A41DCEFA3200ECF88E /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E496A21DCEFA3200ECF88E /* Root.storyboard */; };
+		F8E496A51DCEFA3200ECF88E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E496A31DCEFA3200ECF88E /* RootViewController.swift */; };
+		F8E496A71DCEFB4A00ECF88E /* 2sec.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8E496A61DCEFB4A00ECF88E /* 2sec.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +144,10 @@
 		F8E496991DCEC8A600ECF88E /* PlanSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanSetViewController.swift; sourceTree = "<group>"; };
 		F8E4969B1DCEC95600ECF88E /* PlanSetViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlanSetViewController.storyboard; sourceTree = "<group>"; };
 		F8E4969D1DCEE9C000ECF88E /* LocationsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsResponse.swift; sourceTree = "<group>"; };
+		F8E4969F1DCEF74D00ECF88E /* RouteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteResponse.swift; sourceTree = "<group>"; };
+		F8E496A21DCEFA3200ECF88E /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
+		F8E496A31DCEFA3200ECF88E /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F8E496A61DCEFB4A00ECF88E /* 2sec.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2sec.gif; sourceTree = "<group>"; };
 		FFE9E950029DEFEFB4B2DD82 /* Pods_Tourist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tourist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -206,6 +214,7 @@
 		F80A80281DCC8BBE006C1E9F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F8E496A11DCEFA1D00ECF88E /* Root */,
 				F8E496981DCEC86C00ECF88E /* PlanSet */,
 				F8B7759C1DCE602C005AEE0B /* LocationList */,
 				F8B7758A1DCE2230005AEE0B /* RegionList */,
@@ -223,6 +232,7 @@
 				F80A80301DCC9AD9006C1E9F /* Constants.swift */,
 				F8B775661DCDC9F2005AEE0B /* Weather.swift */,
 				F8E4969D1DCEE9C000ECF88E /* LocationsResponse.swift */,
+				F8E4969F1DCEF74D00ECF88E /* RouteResponse.swift */,
 			);
 			name = DataModel;
 			sourceTree = "<group>";
@@ -364,6 +374,7 @@
 				F80A802D1DCC8F18006C1E9F /* Model */,
 				F80A802C1DCC8EB5006C1E9F /* Extensions */,
 				F8A9679D1DCAC64A00EEA342 /* LaunchScreen.storyboard */,
+				F8E496A61DCEFB4A00ECF88E /* 2sec.gif */,
 				F8A9679B1DCAC64A00EEA342 /* Assets.xcassets */,
 				F8A967A01DCAC64A00EEA342 /* Info.plist */,
 			);
@@ -441,6 +452,15 @@
 				F8E4969B1DCEC95600ECF88E /* PlanSetViewController.storyboard */,
 			);
 			name = PlanSet;
+			sourceTree = "<group>";
+		};
+		F8E496A11DCEFA1D00ECF88E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F8E496A31DCEFA3200ECF88E /* RootViewController.swift */,
+				F8E496A21DCEFA3200ECF88E /* Root.storyboard */,
+			);
+			name = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,11 +558,13 @@
 				F8A9679F1DCAC64A00EEA342 /* LaunchScreen.storyboard in Resources */,
 				F80A80501DCD6778006C1E9F /* TourPlanCell.xib in Resources */,
 				F80A80371DCCBE3E006C1E9F /* TopViewController.storyboard in Resources */,
+				F8E496A41DCEFA3200ECF88E /* Root.storyboard in Resources */,
 				F8A9679C1DCAC64A00EEA342 /* Assets.xcassets in Resources */,
 				F8B775A01DCE61E4005AEE0B /* LocationListViewController.storyboard in Resources */,
 				F8B7758D1DCE2240005AEE0B /* RegionListViewController.storyboard in Resources */,
 				F8E496971DCEBDBD00ECF88E /* LocationItemCell.xib in Resources */,
 				F80A803D1DCCC31B006C1E9F /* TouristSpotCell.xib in Resources */,
+				F8E496A71DCEFB4A00ECF88E /* 2sec.gif in Resources */,
 				F8A9679A1DCAC64A00EEA342 /* MapTestViewController.storyboard in Resources */,
 				F8B775931DCE2261005AEE0B /* RegionItemCell.xib in Resources */,
 				F8E4969C1DCEC95600ECF88E /* PlanSetViewController.storyboard in Resources */,
@@ -708,11 +730,13 @@
 				F80A803F1DCCC906006C1E9F /* ReusableCell.swift in Sources */,
 				F8B775671DCDC9F2005AEE0B /* Weather.swift in Sources */,
 				F80A803C1DCCC31B006C1E9F /* TouristSpotCell.swift in Sources */,
+				F8E496A51DCEFA3200ECF88E /* RootViewController.swift in Sources */,
 				F8B775A41DCE7574005AEE0B /* RegionLocationHeaderView.swift in Sources */,
 				F8B775951DCE2377005AEE0B /* Region.swift in Sources */,
 				F80A80431DCCF1F4006C1E9F /* NSObject+.swift in Sources */,
 				F8A967951DCAC64A00EEA342 /* AppDelegate.swift in Sources */,
 				F8E4969A1DCEC8A600ECF88E /* PlanSetViewController.swift in Sources */,
+				F8E496A01DCEF74D00ECF88E /* RouteResponse.swift in Sources */,
 				F80A80311DCC9AD9006C1E9F /* Constants.swift in Sources */,
 				F8B775921DCE2261005AEE0B /* RegionItemCell.swift in Sources */,
 				F8E496961DCEBDBD00ECF88E /* LocationItemCell.swift in Sources */,

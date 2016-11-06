@@ -26,7 +26,7 @@ final class TourPlanListViewController: UITableViewController {
         }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tourPlan.items.count
+        return 10 // tourPlan.items.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -36,7 +36,7 @@ final class TourPlanListViewController: UITableViewController {
         case 9:  cell.setLine(type: .last)
         default: cell.setLine(type: .center)
         }
-        cell.updateCell(title: tourPlan.items[indexPath.row].title)
+//        cell.updateCell(title: tourPlan.items[indexPath.row].title)
         cell.setWeather(startWhether: .sun, endWeather: .cloud, degree: Double(arc4random() % 20))
 
         return cell

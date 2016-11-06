@@ -110,20 +110,27 @@ struct GetRegionLocationsRequest: TourhythmRequest {
 }
 
 
-//struct GetRoutesRequst: TourhythmRequest {
-//
-//    typealias Response = String
-//
-//    var method: HTTPMethod {
-//        return .post
-//    }
-//
-//    var path: String {
-//        return ""
-//    }
-//
-//    var bodyParameters: BodyParameters? {
-//        FormURLEncodedBodyParameters(formObject: ["geoList": nil]])
-//    }
-//
-//}
+struct GetRoutesRequst: TourhythmRequest {
+
+    typealias Response = String
+
+    var method: HTTPMethod {
+        return .post
+    }
+
+    var path: String {
+        return "/api/getRoutes"
+    }
+
+    var bodyParameters: BodyParameters? {
+        let geoList = locations.map { ["lat": $0.latitude, "lng": $0.longtitude] }
+        return FormURLEncodedBodyParameters(formObject: ["geoList" : geoList])
+    }
+
+    let locations: [LocationsResponse]
+
+    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> String {
+        return ""
+    }
+
+}
