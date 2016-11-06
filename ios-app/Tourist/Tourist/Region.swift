@@ -28,6 +28,10 @@ final class Region: Object {
         self.imageUrl = imageUrl
     }
 
+    override static func primaryKey() -> String? {
+        return "regionId"
+    }
+
 }
 
 
