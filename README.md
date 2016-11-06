@@ -62,8 +62,8 @@
 
 ### 活用した外部技術
 #### API・データ
-* Gooキーワード解析API(https://labs.goo.ne.jp/api/jp/keyword-extraction/)
-* GoogleMapAPI
+* [Google Maps Directions API](https://www.microsoft.com/ja-jp/translator/translatorapi.aspx)
+* [Microsoft Translator Text API] (https://www.microsoft.com/ja-jp/translator/translatorapi.aspx)
 
 #### フレームワーク・ライブラリ・モジュール
 * CocoaPods
