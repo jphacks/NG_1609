@@ -15,7 +15,7 @@ final class PlanSetViewController: UIViewController {
 
     @IBOutlet fileprivate weak var collectionView: UICollectionView!
 
-    fileprivate let locations = List<TourSpot>()
+    fileprivate var locations = [LocationsResponse]()
     fileprivate let tourItems = List<TourPlanItem>()
     var regionId: Int = 0
 
@@ -27,6 +27,10 @@ final class PlanSetViewController: UIViewController {
         navigationItem.backBarButtonItem = backBarItem
 
         collectionView?.register(withNibClass: LocationItemCell.self)
+    }
+
+    private func clac(locations: [LocationsResponse]) {
+
     }
 
 }
@@ -60,7 +64,7 @@ extension PlanSetViewController: UICollectionViewDataSource, UICollectionViewDel
 
         let cell = collectionView.dequeueReusableCell(withClass: LocationItemCell.self, indexPath: indexPath)
         let location = locations[indexPath.row]
-        cell.updateCell(spotId: location.spotId)
+        cell.updateCell(spot: location)
         return cell
     }
 
@@ -70,9 +74,13 @@ extension PlanSetViewController: UICollectionViewDataSource, UICollectionViewDel
             let vc = LocationListViewController.instantiate()
             vc.delegate = self
             vc.regionId = regionId
+            if !locations.isEmpty {
+                let location = locations.last!
+                vc.latitude = Double(location.latitude)
+                vc.longtutude = Double(location.longtitude)
+            }
             navigationController?.pushViewController(vc, animated: true)
         } else if indexPath.section == 3 {
-            print("decide!!")
             let realm = try! Realm()
             let plan = TourPlan()
             plan.planId = realm.objects(TourPlan.self).count
@@ -95,7 +103,7 @@ extension PlanSetViewController: UICollectionViewDelegateFlowLayout {
         if indexPath.section == 0 || indexPath.section == 2 {
             return CGSize(width: view.frame.width - 12.0 * 2.0, height: 100.0)
         }
-        return CGSize(width: view.frame.width - 12.0 * 2.0, height: 150.0)
+        return CGSize(width: view.frame.width - 12.0 * 2.0, height: 180.0)
     }
 
 }
@@ -105,10 +113,8 @@ extension PlanSetViewController: UICollectionViewDelegateFlowLayout {
 
 extension PlanSetViewController: LocationBackHander {
 
-    func didBackHander(spotId: Int) {
-        let realm = try! Realm()
-        guard let region = realm.object(ofType: TourSpot.self, forPrimaryKey: spotId) else { return }
-        locations.append(region)
+    func didBackHander(spot: LocationsResponse) {
+        locations.append(spot)
         collectionView.reloadData()
     }
 
