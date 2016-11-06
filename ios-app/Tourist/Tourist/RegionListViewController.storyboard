@@ -64,12 +64,12 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Auj-Bt-lN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="-174.06296851574214"/>
+            <point key="canvasLocation" x="682" y="-174"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0AZ-gw-8X5">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pk5-m7-loy" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RegionListViewController" automaticallyAdjustsScrollViewInsets="NO" id="Pk5-m7-loy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="vPL-aX-n4d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

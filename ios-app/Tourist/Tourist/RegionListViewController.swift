@@ -19,6 +19,8 @@ final class RegionListViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let backBarItem = UIBarButtonItem(image: #imageLiteral(resourceName: "back"), style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backBarItem
         collectionView?.register(withNibClass: RegionItemCell.self)
 
         guard let realm = try? Realm() else { fatalError() }
@@ -70,7 +72,9 @@ final class RegionListViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard indexPath.section != 0 else { return }
         let region = regions[indexPath.row]
-        print(region)
+        let vc = LocationListViewController.instantiate()
+        vc.regionId = region.regionId
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     deinit {

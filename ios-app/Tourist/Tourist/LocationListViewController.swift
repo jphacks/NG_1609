@@ -11,11 +11,14 @@ import APIKit
 import RealmSwift
 
 
-final class LocationListViewController: UICollectionViewController {
+final class LocationListViewController: UIViewController {
 
-    private var locations: Results<TourSpot>!
+    @IBOutlet private weak var collectionView: UICollectionView!
+
+    fileprivate var locations: Results<TourSpot>!
     private var notification: NotificationToken?
     var regionId: Int = 0
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,18 +49,47 @@ final class LocationListViewController: UICollectionViewController {
                 }
             }
         }
+
+//        guard let region = realm.object(ofType: TourSpot.self, forPrimaryKey: regionId) else { return }
     }
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+        navigationController?.navigationBar.shadowImage = nil
+    }
+
+    deinit {
+        notification?.stop()
+    }
+
+}
+
+
+// MARK: - :UICollectionViewDataSource, Deletate
+
+extension LocationListViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }
 
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if section == 0 { return 1 }
         return locations.count
     }
 
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.section == 0 {
             return collectionView.dequeueReusableCell(withReuseIdentifier: "RegionTitleCell", for: indexPath)
         }
@@ -68,14 +100,32 @@ final class LocationListViewController: UICollectionViewController {
         return cell
     }
 
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard indexPath.section != 0 else { return }
-        let region = locations[indexPath.row]
-        print(region)
+        let location = locations[indexPath.row]
     }
 
-    deinit {
-        notification?.stop()
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        print(kind, indexPath)
+
+        if kind == UICollectionElementKindSectionHeader,
+            let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "RegionLocationHeader", for: indexPath) as? RegionLocationHeaderView {
+            view.setRegion(regionId: regionId)
+            return view
+        }
+
+        return collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "LocationFooter", for: indexPath)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        if section == 0 {
+            return CGSize(width: view.frame.width, height: 200)
+        }
+        return CGSize(width: 0, height: 0)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        return CGSize(width: 0, height: 0)
     }
 
 }
