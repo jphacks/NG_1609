@@ -289,6 +289,7 @@
 		F80A80391DCCC224006C1E9F /* CollectionCell */ = {
 			isa = PBXGroup;
 			children = (
+				F8E496931DCEBCE100ECF88E /* LocationItem */,
 				F8B7758F1DCE2253005AEE0B /* RegionItem */,
 				F80A804C1DCD6735006C1E9F /* TouristSpot */,
 			);
@@ -410,6 +411,13 @@
 				F8B7759F1DCE61E4005AEE0B /* LocationListViewController.storyboard */,
 			);
 			name = LocationList;
+			sourceTree = "<group>";
+		};
+		F8E496931DCEBCE100ECF88E /* LocationItem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LocationItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
