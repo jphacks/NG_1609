@@ -23,7 +23,7 @@ final class LocationListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        collectionView?.register(withNibClass: RegionItemCell.self)
+        collectionView?.register(withNibClass: LocationItemCell.self)
 
         guard let realm = try? Realm() else { fatalError() }
         locations = realm.objects(TourSpot.self).filter("regionId == %@", regionId)
@@ -94,15 +94,17 @@ extension LocationListViewController: UICollectionViewDataSource, UICollectionVi
             return collectionView.dequeueReusableCell(withReuseIdentifier: "RegionTitleCell", for: indexPath)
         }
 
-        let cell = collectionView.dequeueReusableCell(withClass: RegionItemCell.self, indexPath: indexPath)
+        let cell = collectionView.dequeueReusableCell(withClass: LocationItemCell.self, indexPath: indexPath)
         let location = locations[indexPath.row]
-        cell.setupCell(name: location.name, imageUrl: location.imageUrl)
+        cell.updateCell(spotId: location.spotId)
         return cell
     }
+
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard indexPath.section != 0 else { return }
         let location = locations[indexPath.row]
+        print(location)
     }
 
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

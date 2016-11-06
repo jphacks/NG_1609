@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 final class TouristSpotCell: UICollectionViewCell, NibReusableCell {
 
     @IBOutlet private weak var imageView: UIImageView!
