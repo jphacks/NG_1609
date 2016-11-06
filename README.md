@@ -1,5 +1,5 @@
 # Tourhythm
-## Client
+## Client : 
 [![Xcode](https://img.shields.io/badge/Xcode-8.0.1-blue.svg)](https://developer.apple.com/xcode/)
 [![Swift](https://img.shields.io/badge/Swift-3.0.1-orange.svg)](https://swift.org/)
 [![Support](https://img.shields.io/badge/support-iOS%209%2B%20-orange.svg?style=flat)](https://www.apple.com/nl/ios/)
@@ -12,7 +12,7 @@
 ![Ruby](https://img.shields.io/badge/Ruby-2.3.1-red.svg)
 ![Rails](https://img.shields.io/badge/Rails-5.0.0.1-red.svg)
 
-## Resourses :  https://github.com/jphacks/NG_1609_3 
+## Resources :  https://github.com/jphacks/NG_1609_3 
 ![XD](https://img.shields.io/badge/XD-0.6.2.7-ff69b4.svg)
 
 ## 製品概要
