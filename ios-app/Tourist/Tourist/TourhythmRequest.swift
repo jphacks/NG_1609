@@ -59,6 +59,32 @@ struct GetLocationsRequest: TourhythmRequest {
 }
 
 
+struct GetNearbyLocationsRequest: TourhythmRequest {
+
+    typealias Response = [LocationsResponse]
+
+    var method: HTTPMethod {
+        return .get
+    }
+
+    var path: String {
+        return "/api/nearbyLocations"
+    }
+
+    var queryParameters: [String : Any]? {
+        return ["lat": latitude, "lng": longthtude]
+    }
+
+    let latitude: Double
+    let longthtude: Double
+
+    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> [LocationsResponse] {
+        return try decodeArray(object)
+    }
+
+}
+
+
 struct GetRegionLocationsRequest: TourhythmRequest {
 
     typealias Response = [TourSpot]
@@ -82,3 +108,22 @@ struct GetRegionLocationsRequest: TourhythmRequest {
     }
 
 }
+
+
+//struct GetRoutesRequst: TourhythmRequest {
+//
+//    typealias Response = String
+//
+//    var method: HTTPMethod {
+//        return .post
+//    }
+//
+//    var path: String {
+//        return ""
+//    }
+//
+//    var bodyParameters: BodyParameters? {
+//        FormURLEncodedBodyParameters(formObject: ["geoList": nil]])
+//    }
+//
+//}

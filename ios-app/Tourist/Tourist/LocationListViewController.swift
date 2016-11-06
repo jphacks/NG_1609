@@ -9,10 +9,11 @@
 import UIKit
 import APIKit
 import RealmSwift
+import Result
 
 
 protocol LocationBackHander: class {
-    func didBackHander(spotId: Int)
+    func didBackHander(spot: LocationsResponse)
 }
 
 
@@ -20,11 +21,12 @@ final class LocationListViewController: UIViewController {
 
     @IBOutlet private weak var collectionView: UICollectionView!
 
-    fileprivate var locations: Results<TourSpot>!
-    private var notification: NotificationToken?
+    fileprivate var locations = [LocationsResponse]()
 
     weak var delegate: LocationBackHander?
     var regionId: Int = 0
+    var latitude: Double?
+    var longtutude: Double?
 
 
     override func viewDidLoad() {
@@ -35,32 +37,33 @@ final class LocationListViewController: UIViewController {
 
         collectionView?.register(withNibClass: LocationItemCell.self)
 
-        guard let realm = try? Realm() else { fatalError() }
-        locations = realm.objects(TourSpot.self).filter("regionId == %@", regionId)
-        notification = locations.addNotificationBlock { [weak self] _ in
-            self?.collectionView?.reloadData()
-        }
-
-        if locations.isEmpty {
-            Session.send(GetRegionLocationsRequest(regionId: regionId)) { result in
+        if let lat = latitude, let lng = longtutude {
+            let request = GetNearbyLocationsRequest(latitude: lat, longthtude: lng)
+            Session.send(request) { [weak self] result in
                 switch result {
                 case .success(let locations):
-                    do {
-                        let realm = try Realm()
-                        try realm.write {
-                            realm.add(locations)
-                        }
-                    } catch {
-                        print(error)
-                    }
+                    self?.locations.append(contentsOf: locations)
+                    self?.collectionView.reloadData()
 
                 case .failure(let error):
                     print(error)
                 }
             }
+        } else {
+            let request = GetRegionLocationsRequest(regionId: regionId)
+            Session.send(request, handler: handleResponse)
         }
+    }
 
-//        guard let region = realm.object(ofType: TourSpot.self, forPrimaryKey: regionId) else { return }
+    private func handleResponse(result: Result<[TourSpot], SessionTaskError>) -> Void {
+        switch result {
+        case .success(let locations):
+            self.locations = locations.map { LocationsResponse.parse(ofSpot: $0) }
+            collectionView.reloadData()
+
+        case .failure(let error):
+            print(error)
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -77,10 +80,6 @@ final class LocationListViewController: UIViewController {
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
         navigationController?.navigationBar.shadowImage = nil
-    }
-
-    deinit {
-        notification?.stop()
     }
 
 }
@@ -106,17 +105,16 @@ extension LocationListViewController: UICollectionViewDataSource, UICollectionVi
 
         let cell = collectionView.dequeueReusableCell(withClass: LocationItemCell.self, indexPath: indexPath)
         let location = locations[indexPath.row]
-        cell.updateCell(spotId: location.spotId)
+        cell.updateCell(spot: location)
         return cell
     }
-
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard indexPath.section != 0 else { return }
         let location = locations[indexPath.row]
         print(location)
-        delegate?.didBackHander(spotId: location.spotId)
-        navigationController?.popViewController(animated: true)
+        delegate?.didBackHander(spot: location)
+        _ = navigationController?.popViewController(animated: true)
     }
 
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -153,7 +151,7 @@ extension LocationListViewController: UICollectionViewDelegateFlowLayout {
         if indexPath.section == 0 {
             return CGSize(width: view.frame.width - 12.0 * 2.0, height: 100.0)
         }
-        return CGSize(width: view.frame.width - 12.0 * 2.0, height: 150.0)
+        return CGSize(width: view.frame.width - 12.0 * 2.0, height: 180.0)
     }
 
 }

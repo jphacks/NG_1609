@@ -7,15 +7,15 @@
 //
 
 import UIKit
-import SwiftGifOrigin
+import APIKit
+import RealmSwift
 
-class RootViewController: UIViewController  {
 
-    @IBOutlet var imageview: UIImageView!
+class RootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       imageview.loadGif(name: "2sec")
-    }
+         }
+
 
   }
