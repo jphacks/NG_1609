@@ -31,13 +31,12 @@ final class LocationItemCell: UICollectionViewCell, NibReusableCell {
         backView.layer.shadowRadius = 4.0
     }
 
-    func updateCell(spotId: Int) {
-        let realm = try! Realm()
-        guard let spot = realm.object(ofType: TourSpot.self, forPrimaryKey: spotId) else { return }
+    func updateCell(spot: LocationsResponse) {
         imageView.kf.setImage(with: URL(string: spot.imageUrl))
         titleLabel.text = spot.name
-        positionLabel.text = "Kyoto, hogehoge"
-        distanceLabel.text = " 0.5 km"
+        positionLabel.text = spot.address
+        distanceLabel.text =
+            (spot.bearing == -1 ? " - " : "\(spot.bearing)") + "m  \(spot.requiredTime * 60)min"
     }
 
 }

@@ -1,7 +1,7 @@
 # Tourhythm
 ## Client
-[![Xcode](https://img.shields.io/badge/Xcode-8.0.1-orange.svg)](https://developer.apple.com/xcode/)
-[![Swift](https://img.shields.io/badge/Swift-3.0.1-orange.svg)](https://swift.org/)
+[![Xcode](https://img.shields.io/badge/Xcode-8.0.1-blue.svg)](https://developer.apple.com/xcode/)
+[![Swift](https://img.shields.io/badge/Swift-3.0.1-blue.svg)](https://swift.org/)
 [![Support](https://img.shields.io/badge/support-iOS%209%2B%20-orange.svg?style=flat)](https://www.apple.com/nl/ios/)
 [![Homebrew](https://img.shields.io/badge/Homebrew-1.0.5-orange.svg)](http://brew.sh/index_ja.html)
 [![CocoaPods](https://img.shields.io/badge/CocoaPods-1.1.1-orange.svg)](https://cocoapods.org)

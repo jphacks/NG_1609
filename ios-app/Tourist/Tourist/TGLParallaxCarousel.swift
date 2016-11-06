@@ -35,7 +35,7 @@ open class TGLParallaxCarousel: UIView {
     // MARK: - outlets
     @IBOutlet fileprivate weak  var mainView: UIView!
     @IBOutlet fileprivate weak  var pageControl: UIPageControl!
-    
+
     // MARK: - properties
     open weak var delegate: TGLParallaxCarouselDelegate? {
         didSet {
@@ -47,7 +47,7 @@ open class TGLParallaxCarousel: UIView {
             reloadData()
         }
     }
-    open var margin: CGFloat = 0  {
+    open var margin: CGFloat = 0 {
         didSet {
             reloadData()
         }
