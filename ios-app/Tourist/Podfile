@@ -6,6 +6,7 @@ target 'Tourist' do
   pod 'GoogleMaps', '2.1.0'
   pod 'GooglePlaces', '2.1.0'
   pod 'GooglePlacePicker', '2.1.0'
+  pod 'SwiftGifOrigin'
   target 'TouristTests' do
     inherit! :search_paths
   end
