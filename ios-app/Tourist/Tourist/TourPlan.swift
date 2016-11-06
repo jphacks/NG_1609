@@ -19,6 +19,7 @@ final class TourPlan: Object {
     dynamic var startTime   : String = ""
     dynamic var endTime     : String = ""
     let items = List<TourPlanItem>()
+    let lines = List<MapLine>()
 
 
     override static func primaryKey() -> String? {

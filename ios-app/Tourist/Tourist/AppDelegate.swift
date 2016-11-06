@@ -8,6 +8,7 @@
 
 import UIKit
 import APIKit
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
+    let cGoogleMapsAPIKey = "AIzaSyDRA-CakqO_NmeWxCi_0sqqposrBQjSZ-Y"
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        GMSServices.provideAPIKey(cGoogleMapsAPIKey) //追記
 
         // for Test
 //        let request1 = GetRegionsRequest()
