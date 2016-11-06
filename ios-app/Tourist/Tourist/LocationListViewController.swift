@@ -11,17 +11,27 @@ import APIKit
 import RealmSwift
 
 
+protocol LocationBackHander: class {
+    func didBackHander(spotId: Int)
+}
+
+
 final class LocationListViewController: UIViewController {
 
     @IBOutlet private weak var collectionView: UICollectionView!
 
     fileprivate var locations: Results<TourSpot>!
     private var notification: NotificationToken?
+
+    weak var delegate: LocationBackHander?
     var regionId: Int = 0
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let backBarItem = UIBarButtonItem(image: #imageLiteral(resourceName: "back"), style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backBarItem
 
         collectionView?.register(withNibClass: LocationItemCell.self)
 
@@ -105,6 +115,8 @@ extension LocationListViewController: UICollectionViewDataSource, UICollectionVi
         guard indexPath.section != 0 else { return }
         let location = locations[indexPath.row]
         print(location)
+        delegate?.didBackHander(spotId: location.spotId)
+        navigationController?.popViewController(animated: true)
     }
 
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

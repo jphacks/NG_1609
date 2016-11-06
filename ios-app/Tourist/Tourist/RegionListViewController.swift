@@ -72,7 +72,7 @@ final class RegionListViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard indexPath.section != 0 else { return }
         let region = regions[indexPath.row]
-        let vc = LocationListViewController.instantiate()
+        let vc = PlanSetViewController.instantiate()
         vc.regionId = region.regionId
         navigationController?.pushViewController(vc, animated: true)
     }
