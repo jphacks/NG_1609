@@ -1,4 +1,4 @@
-# [![Tourhythm](https://www.dropbox.com/s/8vhd173i1ls7snb/logoRed.png?dl=0)]
+# [![Tourhythm](http://www.fastpic.jp/images.php?file=9883787879.png)]
 ## Client : 
 [![Xcode](https://img.shields.io/badge/Xcode-8.0.1-blue.svg)](https://developer.apple.com/xcode/)
 [![Swift](https://img.shields.io/badge/Swift-3.0.1-orange.svg)](https://swift.org/)
